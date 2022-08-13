@@ -10,7 +10,7 @@
     },
     "patches": {
         "Change Opacity on Selection": {
-            "default": "True",
+            "default": "False",
             "False": {},
             "True": {
                 "selection/opacityChangeWhenSelected.css": ["SP"]
