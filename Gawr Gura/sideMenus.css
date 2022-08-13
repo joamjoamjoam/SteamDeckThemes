@@ -1,11 +1,11 @@
 /*Steam and QAM menus*/
 :root {
-    --BackgroundLight: #2a62d1 !important; /* base */
-    --BackgroundRegular: #2a62d1 !important; /* Surface */
-    --BackgroundDark: #0d337e !important; /* Overlay */
-    --BorderLight: #c4c3ca !important; /* Higlight High */
-    --BorderDark: #070342 !important; /* Highlight Low */
-    --Accent: #4a7feb !important; /* Pine */
+  --BackgroundLight: #2a62d1 !important; /* base */
+  --BackgroundRegular: #2a62d1 !important; /* Surface */
+  --BackgroundDark: #11036e !important; /* Overlay */
+  --BorderLight: #c4c3ca !important; /* Higlight High */
+  --BorderDark: #070342 !important; /* Highlight Low */
+  --Accent: #ebdf75 !important; /* Pine */
 }
 /* Quick Access */
 
@@ -68,21 +68,34 @@
 
   .friendStatusHover.gpfocuswithin {
     background: var(--BackgroundLight) !important;
-    color: white !important;
+    color: var(--textColor) !important;
   }
 
   .groupHeaderContainer.Panel.Focusable.gpfocuswithin {
     background: var(--BackgroundLight) !important;
-    color: white !important;
+    color: var(--textColor) !important;
 }
 
 .SortByRecent.Panel.Focusable{
     background: var(--BackgroundLight) !important;
-    color: white !important;
+    color: var(--textColor) !important;
 }
 
 .SVGIcon_Button.SVGIcon_SortBy{
-    stroke: white;
+    stroke: var(--textColor);
+}
+
+.quickaccessmenu_Menu_1gJzx.Panel.Focusable.gpfocuswithin button.DialogButton.gamepaddialog_Button_1kn70, button.DialogButton.gamepaddropdown_DropDownControlButton_28bny {
+  background: var(--BackgroundRegular) !important;
+  border-color: var(--BorderLight) var(--BorderDark) var(--BorderDark)
+    var(--BorderLight);
+  font: inherit;
+}
+
+button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:active, button.gamepaddialog_Button_1kn70.DialogButton:enabled.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active, button.gamepaddialog_Button_1kn70.DialogButton:active.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:active:active, button.gamepaddialog_Button_1kn70.DialogButton:hover.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:hover:active, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover:active{
+  color: var(--textColor);
+  background-color: var(--BackgroundDark);
+
 }
 
   /* Downloads */
@@ -184,29 +197,6 @@
     background: var(--BackgroundLight) !important;
   }
 
-  
-
-  .quickaccessmenu_Menu_1gJzx.Panel.Focusable.gpfocuswithin button.DialogButton.gamepaddialog_Button_1kn70, button.DialogButton.gamepaddropdown_DropDownControlButton_28bny {
-    background: var(--BackgroundRegular) !important;
-    border-color: var(--BorderLight) var(--BorderDark) var(--BorderDark)
-      var(--BorderLight);
-    font: inherit;
-  }
-
-  button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:active, button.gamepaddialog_Button_1kn70.DialogButton:enabled.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active, button.gamepaddialog_Button_1kn70.DialogButton:active.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:active:active, button.gamepaddialog_Button_1kn70.DialogButton:hover.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:hover:active, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover:active{
-    color: white;
-    background-color: var(--BackgroundDark);
-
-  }
-
-  /*
-<button type="button" class="DialogButton _DialogLayout Secondary gamepaddialog_Button_1kn70 Focusable" tabindex="-1">Reset to Default</button>
-  */
-
-  /*
-
-  */
-
   .basiccontextmenu_contextMenuItem_3PqLg {
     color: var(--Accent);
     border-color: var(--BorderLight) var(--BorderDark) var(--BorderDark)
@@ -302,4 +292,24 @@
 
   .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocus, .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocuswithin{
     background: var(--BackgroundLight) !important;
+  }
+
+  /* Main (Steam) Menu*/
+
+  .mainmenu_Menu_23IDi.mainmenu_Open_3apLK.Panel.Focusable.gpfocuswithin{
+    background-color: var(--BackgroundDark);
+    color: var(--textColor);
+  }
+
+  .mainmenu_Item_2w9Tp.gpfocus.gpfocuswithin{
+    background: var(--BackgroundLight) !important;
+    color: var(--textColor) !important;
+  }
+
+  .mainmenu_ActiveDot_1uLVH{
+    color: var(--Accent);
+  }
+
+  .marquee_Content_2ADpT{
+    color: var(--textColor);
   }

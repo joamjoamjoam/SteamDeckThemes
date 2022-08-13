@@ -96,8 +96,29 @@ input.searchbar_SearchBox_2a1-s.searchbar_Visible_1bLfc.Focusable::placeholder {
 }
 
 .footer_BasicFooter_3T1iF{
-    background-color: #2a62d1AF;
+    background: #2a62d1AF;
 }
 
+.friendStatusHover.gpfocuswithin {
+    background: var(--BackgroundLight) !important;
+    color: var(--textColor) !important;
+}
+
+.groupHeaderContainer.Panel.Focusable.gpfocuswithin {
+    background: var(--BackgroundLight) !important;
+    color: var(--textColor) !important;
+}
+
+.SortByRecent.Panel.Focusable{
+    background: var(--BackgroundLight) !important;
+    color: var(--textColor) !important;
+}
+
+.SVGIcon_Button.SVGIcon_SortBy{
+    stroke: var(--textColor);
+}
+.favoriteElement.gpfocuswithin{
+    background: var(--BackgroundLight) !important;
+}
 
 

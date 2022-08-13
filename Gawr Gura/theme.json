@@ -6,7 +6,7 @@
             "SP"
         ],
         "sideMenus.css": [
-            "SP", "QuickAccess", "MainMenu"
+            "QuickAccess", "MainMenu"
         ] 
     },
     "patches": {
