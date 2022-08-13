@@ -184,14 +184,9 @@
     background: var(--BackgroundLight) !important;
   }
 
-  button.DialogButton.gamepaddropdown_DropDownControlButton_28bny {
-    background: var(--BackgroundRegular) !important;
-    border-color: var(--BorderLight) var(--BorderDark) var(--BorderDark)
-      var(--BorderLight);
-    font: inherit;
-  }
+  
 
-  button.DialogButton.gamepaddialog_Button_1kn70 {
+  .quickaccessmenu_Menu_1gJzx.Panel.Focusable.gpfocuswithin button.DialogButton.gamepaddialog_Button_1kn70, button.DialogButton.gamepaddropdown_DropDownControlButton_28bny {
     background: var(--BackgroundRegular) !important;
     border-color: var(--BorderLight) var(--BorderDark) var(--BorderDark)
       var(--BorderLight);
