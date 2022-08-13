@@ -37,12 +37,5 @@
                 "location/bottomRightCGV.css": ["SP"]
             }
         }
-//        "Override Theme Colors": {
-//            "default": "True",
-//            "False": {},
-//            "True": {
-//                "overrideThemeColors.css": ["SP"]
-//            }
-//        }
     }
 }
