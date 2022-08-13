@@ -1,0 +1,21 @@
+{
+    "name": "Gawr Gura",
+    "version": "1.0",
+    "inject": {
+        "shared.css": [
+            "SP"
+        ],
+        "sideMenus.css": [
+            "SP", "QuickAccess", "MainMenu"
+        ] 
+    },
+    "patches": {
+        "No Friends": {
+            "default": "Yes",
+            "No": {},
+            "Yes": {
+                "nofriends.css": [ "SP" ]
+            }
+        }
+    }
+}
