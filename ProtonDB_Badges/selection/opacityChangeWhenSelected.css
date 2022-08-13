@@ -1,0 +1,7 @@
+.protondb-decky-indicator{
+    opacity : .8;
+}
+
+.protondb-decky-indicator .gpfocus .gpfocuswithin:active{
+    opacity : 1 !important;
+}

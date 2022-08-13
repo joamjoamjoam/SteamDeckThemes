@@ -1,0 +1,41 @@
+{
+    "name": "Proton DB Badges Themer",
+    "version": "v1",
+    "author": "joamjoamjoam",
+    "target": "Other",
+    "inject": {
+        "shared.css": [
+            "SP"
+        ] 
+    },
+    "patches": {
+        "Change Opacity on Selection": {
+            "default": "True",
+            "False": {},
+            "True": {
+                "selection/opacityChangeWhenSelected.css": ["SP"]
+            }
+        },
+        "Badge Location": {
+            "default": "Top Left",
+            "Top Left": {
+                "location/topLeft.css": ["SP"]
+            },
+            "Top Right": {
+                "location/topRight.css": ["SP"]
+            },
+            "Bottom Left": {
+                "location/bottomLeft.css": ["SP"]
+            },
+            "Bottom Right": {
+                "location/bottomRight.css": ["SP"]
+            },
+            "Bottom Left Clean Game View": {
+                "location/bottomLeftCGV.css": ["SP"]
+            },
+            "Bottom Right Clean Game View": {
+                "location/bottomRightCGV.css": ["SP"]
+            }
+        }
+    }
+}

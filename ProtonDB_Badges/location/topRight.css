@@ -1,0 +1,5 @@
+.protondb-decky-indicator{
+    top: 40px !important;
+    left: calc(100% - 170px ) !important;
+    position: absolute !important;
+}
