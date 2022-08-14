@@ -24,12 +24,5 @@
 ### Clean Game View by [suchmememanyskill](https://github.com/suchmememanyskill/Steam-Deck-Themes)
 ### Colored Toggles by [suchmememanyskill](https://github.com/suchmememanyskill/Steam-Deck-Themes)
 
-# ProtonDB Medals
-This theme adds styles to the medals created by the ProtonDB Medals plugin by OMGDucky
-
-Opacity change when selected:
-
-Location change in Game View:
-
 
 
