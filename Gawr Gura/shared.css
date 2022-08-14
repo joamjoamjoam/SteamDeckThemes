@@ -1,12 +1,12 @@
 :root {
-    --BackgroundLight: #2a62d1 !important; /* selection Highlight Colors*/
-    --BackgroundRegular: #2a62d1 !important; /* Button Colors*/
-    --BackgroundDark: #11036e !important; /* Background and menu colors */
-    --BorderLight: #c4c3ca !important;
-    --BorderDark: #070342 !important;
-    --Accent: #ebdf75 !important; /*Accent Colors*/
+    --GGBackgroundLight: #2a62d1 !important; /* selection Highlight Colors*/
+    --GGBackgroundRegular: #2a62d1 !important; /* Button Colors*/
+    --GGBackgroundDark: #11036e !important; /* Background and menu colors */
+    --GGBorderLight: #c4c3ca !important;
+    --GGBorderDark: #070342 !important;
+    --GGAccent: #ebdf75 !important; /*GGAccent Colors*/
 
-    --fontColors: white !important
+    --GGfontColor: white !important
 }
 
 .gamepadhomerecentgames_RecentGamesInnerContainer_282X0 {
@@ -43,11 +43,11 @@
 }
 
 .header_Header_1E_SL::before{
-    background: var(--BackgroundDark);
+    background: var(--GGBackgroundDark);
 }
 
 .lockscreen_DigitIndicator_3eHNj{
-    border-color: var(--fontColors);
+    border-color: var(--GGfontColor);
 }
 
 .lockscreen_Details_aLaNw > div {
@@ -73,7 +73,7 @@
 }
 
 input.searchbar_SearchBox_2a1-s.searchbar_Visible_1bLfc.Focusable::placeholder {
-    color: var(--fontColors);
+    color: var(--GGfontColor);
 }
 
 .lockscreen_NumericButtonOption_2c4Hz > svg {
@@ -102,17 +102,17 @@ input.searchbar_SearchBox_2a1-s.searchbar_Visible_1bLfc.Focusable::placeholder {
 }
 
 .friendStatusHover.gpfocuswithin {
-    background: var(--BackgroundLight) !important;
+    background: var(--GGBackgroundLight) !important;
     color: var(--textColor) !important;
 }
 
 .groupHeaderContainer.Panel.Focusable.gpfocuswithin {
-    background: var(--BackgroundLight) !important;
+    background: var(--GGBackgroundLight) !important;
     color: var(--textColor) !important;
 }
 
 .SortByRecent.Panel.Focusable{
-    background: var(--BackgroundLight) !important;
+    background: var(--GGBackgroundLight) !important;
     color: var(--textColor) !important;
 }
 
@@ -120,7 +120,7 @@ input.searchbar_SearchBox_2a1-s.searchbar_Visible_1bLfc.Focusable::placeholder {
     stroke: var(--textColor);
 }
 .favoriteElement.gpfocuswithin{
-    background: var(--BackgroundLight) !important;
+    background: var(--GGBackgroundLight) !important;
 }
 
 

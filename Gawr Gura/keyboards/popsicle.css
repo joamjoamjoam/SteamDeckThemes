@@ -4,7 +4,7 @@
     --KBSelectedBackgroundColor: rgba(201, 76, 76, 0.637) !important;
     --KBForegroundColor: #FFFFFF !important;
     --KBSelectedForegroundColor: #FFFFFFFF !important;
-	--KBAccentColor: #ebdf75 !important;
+	--KBGGAccentColor: #ebdf75 !important;
 	--KBModifierBackgroundColor: #11036ea8 !important;
     --KBModifierForegroundColor: #FFFFFF !important;
     --KBSelectedModifierBackgroundColor: #2a62d170 !important;
@@ -12,7 +12,7 @@
     --KBDeadKeyBackgroundColor: #c4c3ca9d !important;
     --KBDeadKeyInactiveForegroundColor: #070342 !important;
     --KBDeadKeyActiveForegroundColor: #11036e !important;
-    --KBGlyphColor: var(--KBAccentColor) !important;
+    --KBGlyphColor: var(--KBGGAccentColor) !important;
     --KBSelectedGlyphColor: #ffffff !important;
 }
 
@@ -51,7 +51,7 @@
     --key-extendedkey-hover-color: var(--KBSelectedModifierForegroundColor);
     --key-toggleon-background-color: var(--KBSelectedBackgroundColor);
     --key-toggleon-color: var(--KBSelectedForegroundColor);
-    --key-toggleoneshot-color: var(--KBAccentColor);
+    --key-toggleoneshot-color: var(--KBGGAccentColor);
 
     /*Handle Background Selctors for Modifiers*/
 
@@ -59,8 +59,8 @@
     --key-emoji-category-highlight-background-color: var(--KBSelectedBackgroundColor);
     --key-emoji-row-background-color: transparent;
     --key-emoji-background-color: transparent;
-    --key-emoji-color: var(--KBAccentColor);
-    --key-emoji-focused-color: var(--KBAccentColor);
+    --key-emoji-color: var(--KBGGAccentColor);
+    --key-emoji-focused-color: var(--KBGGAccentColor);
     --key-emoji-focused-background-color: var(--KBSelectedBackgroundColor);
 
     --key-touched-background-color: var(--KBSelectedBackgroundColor);
