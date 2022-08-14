@@ -4,9 +4,13 @@
 ![Lock Screen](/images/Gawr%20Gura/lockscreenSD.jpg)
 ![Main Screen](/images/Gawr%20Gura/main.jpg)
 ![Library](/images/Gawr%20Gura/Library.jpg)
-![Minimal Keyboard](/images/Gawr%20Gura/minimalKeyboard.jpg)
-![Popsicle Keyboard](/images/Gawr%20Gura/popsicleKB.jpg)
 ![QAM](/images/Gawr%20Gura/QAM.jpg)
+
+## Keyboards
+### Minimal
+![Minimal Keyboard](/images/Gawr%20Gura/minimalKeyboard.jpg)
+### Popsicle
+![Popsicle Keyboard](/images/Gawr%20Gura/popsicleKB.jpg)
 
 
 ## Image Credits
