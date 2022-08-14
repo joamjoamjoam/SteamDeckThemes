@@ -1,6 +1,6 @@
 {
     "name": "Proton DB Badges Themer",
-    "version": "v1",
+    "version": "v1.0",
     "author": "joamjoamjoam",
     "target": "Other",
     "inject": {
@@ -31,9 +31,12 @@
                 "location/bottomRight.css": ["SP"]
             },
             "Bottom Left Clean Game View": {
+                "cleanGameView/shared.css": [ "SP" ],
                 "location/bottomLeftCGV.css": ["SP"]
+
             },
             "Bottom Right Clean Game View": {
+                "cleanGameView/shared.css": [ "SP" ],
                 "location/bottomRightCGV.css": ["SP"]
             }
         }

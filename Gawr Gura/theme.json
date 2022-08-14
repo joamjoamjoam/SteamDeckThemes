@@ -1,6 +1,6 @@
 {
     "name": "Gawr Gura",
-    "version": "1.0",
+    "version": "v1.0",
     "author": "joamjoamjoam",
     "target": "System-Wide",
     "inject": {
