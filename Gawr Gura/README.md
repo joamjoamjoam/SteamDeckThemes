@@ -1,5 +1,3 @@
-# SteamDeckThemes
-
 # Gawr Gura
 ![Lock Screen](/images/Gawr%20Gura/lockscreenSD.jpg)
 ![Main Screen](/images/Gawr%20Gura/main.jpg)
