@@ -21,6 +21,8 @@
 ## Bundled Theme Credits
 ### Clean Game View by [suchmememanyskill](https://github.com/suchmememanyskill/Steam-Deck-Themes)
 ### Colored Toggles by [suchmememanyskill](https://github.com/suchmememanyskill/Steam-Deck-Themes)
+### Switch Like Home by [suchmememanyskill](https://github.com/suchmememanyskill/Steam-Deck-Themes)
+### Minimal Lock Screen by [joamjoamjoam](https://github.com/joamjoamjoam/SteamDeckThemes)
 
 
 

@@ -1,0 +1,86 @@
+{
+    "name": "Minimal Lock Screen",
+    "version": "v1.0",
+    "author": "joamjoamjoam, blax722",
+    "target": "System-Wide",
+    "inject": {
+        "shared.css": [
+            "SP"
+        ],
+        "sideMenus.css": [
+            "QuickAccess", "MainMenu"
+        ] 
+    },
+    "patches": {
+        "Switch Like Home": {
+            "default": "Yes",
+            "type": "checkbox",
+            "values":{
+                "No": {},
+                "Yes": {
+                    "switchLikeHome.css": [ "SP" ]
+                }
+            }
+        },
+        "No Friends": {
+            "default": "Yes",
+            "type": "checkbox",
+            "values":{
+                "No": {},
+                "Yes": {
+                    "nofriends.css": [ "SP" ]
+                }
+            }
+
+        },
+        "Clean Game View": {
+            "default": "Yes",
+            "type": "checkbox",
+            "values":{
+                "No": {},
+                "Yes": {
+                    "cleanGameView/shared.css": [ "SP" ]
+                }
+            }
+        },
+        "Lock Screen Theme": {
+            "default": "Minimal",
+            "type": "dropdown",
+            "values":{
+                "None": {},
+                "Minimal": {
+                    "lockscreen/MLSShared.css": [ "SP" ],
+                    "lockscreen/minimalLockScreen.css": [ "SP" ]
+                },
+                "Minimal with Icons": {
+                    "lockscreen/MLSShared.css": [ "SP" ],
+                    "lockscreen/minimalLockScreenWithIcons.css": [ "SP" ]
+                }
+            }
+        },
+        "Keyboard Theme": {
+            "default": "None",
+            "type": "dropdown",
+            "values":{
+                "None": {},
+                "Popsicle": {
+                    "keyboards/popsicle.css": [ "SP" ]
+                },
+                "Minimal": {
+                    "keyboards/minimal.css": [ "SP" ]
+                }
+            }
+        },
+        "Colored Toggles": {
+            "default": "Sharky Ocean",
+            "type": "dropdown",
+            "values":{
+                "None": {},
+                "Sharky Ocean": {
+                    "toggleColors/shared.css": [ "QuickAccess", "SP", "MainMenu" ],
+                    "toggleColors/ocean.css": [ "QuickAccess", "SP", "MainMenu" ]
+                }
+            }
+        }
+    }
+}

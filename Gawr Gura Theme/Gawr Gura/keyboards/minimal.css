@@ -14,12 +14,15 @@
     --KBDeadKeyActiveForegroundColor: #11036e !important;
     --KBGlyphColor: var(--KBGGAccentColor) !important;
     --KBSelectedGlyphColor: #ffffff !important;
+    --KBSelectedExtendedKeyBackgroundColor: rgba(23, 164, 189, 1) !important;
+    --KBSelectedExtendedKeyForegroundColor: #FFFFFF !important;
+    --KBExtendedKeyBackgroundColor: #11036e !important;
+    --KBExtendedKeyForegroundColor: #FFFFFF !important;
 }
 
 .DefaultTheme {
-    /* --background-color: linear-gradient(45deg, #163765, #105f86); */
-    --key-action-button-glyph-color: #0cb626;
-    --key-focused-action-button-left-color: #ff0000;
+    --key-action-button-glyph-color: var(--KBGGAccentColor);
+    --key-focused-action-button-left-color: var(--KBModifierBackgroundColor);
     --key-focused-action-button-right-color: var(--KBSelectedGlyphColor);
     --key-color: var(--KBForegroundColor);
     --key-background-color: var(--KBBackgroundColor);
@@ -43,12 +46,14 @@
     --key-spacebar-color: var(--KBModifierForegroundColor);
     --key-spacebar-background-color: var(--KBModifierBackgroundColor);
     --key-spacer-background-color: transparent;
-    --key-extendedkey-background-color: #FF0000FF;
-    --key-extendedkey-color: #FFFF00FF;
-    --key-extendedkey-focused-background-color: var(--KBSelectedModifierBackgroundColor);
-    --key-extendedkey-focused-color: var(--KBSelectedModifierForegroundColor);
-    --key-extendedkey-hover-background-color: var(--KBSelectedModifierBackgroundColor);
-    --key-extendedkey-hover-color: var(--KBSelectedModifierForegroundColor);
+
+    --key-extendedkey-background-color: var(--KBExtendedKeyBackgroundColor);
+    --key-extendedkey-color: var(--KBExtendedKeyForegroundColor);
+    --key-extendedkey-focused-background-color: var(--KBSelectedExtendedKeyBackgroundColor);
+    --key-extendedkey-focused-color: var(---KBSelectedExtendedKeyForegroundColor);
+    --key-extendedkey-hover-background-color: var(--KBSelectedBackgroundColor);
+    --key-extendedkey-hover-color: var(--KBGGAccentColor);
+    
     --key-toggleon-background-color: var(--KBSelectedBackgroundColor);
     --key-toggleon-color: var(--KBSelectedForegroundColor);
     --key-toggleoneshot-color: var(--KBGGAccentColor);

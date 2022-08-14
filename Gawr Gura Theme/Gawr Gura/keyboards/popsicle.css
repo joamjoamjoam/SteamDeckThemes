@@ -17,9 +17,8 @@
 }
 
 .DefaultTheme {
-    /* --background-color: linear-gradient(45deg, #163765, #105f86); */
-    --key-action-button-glyph-color: #0cb626;
-    --key-focused-action-button-left-color: #ff0000;
+    --key-action-button-glyph-color: var(--KBGGAccentColor);
+    --key-focused-action-button-left-color: var(--KBModifierBackgroundColor);
     --key-focused-action-button-right-color: var(--KBSelectedGlyphColor);
     --key-color: var(--KBForegroundColor);
     --key-background-color: var(--KBBackgroundColor);
@@ -43,8 +42,8 @@
     --key-spacebar-color: var(--KBModifierForegroundColor);
     --key-spacebar-background-color: var(--KBModifierBackgroundColor);
     --key-spacer-background-color: transparent;
-    --key-extendedkey-background-color: #FF0000FF;
-    --key-extendedkey-color: #FFFF00FF;
+    --key-extendedkey-background-color: var(--KBModifierBackgroundColor);
+    --key-extendedkey-color: var(--KBModifierForegroundColor);
     --key-extendedkey-focused-background-color: var(--KBSelectedModifierBackgroundColor);
     --key-extendedkey-focused-color: var(--KBSelectedModifierForegroundColor);
     --key-extendedkey-hover-background-color: var(--KBSelectedModifierBackgroundColor);

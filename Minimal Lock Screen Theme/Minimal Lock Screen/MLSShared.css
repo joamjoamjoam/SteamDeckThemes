@@ -1,0 +1,37 @@
+:root{
+    --MLSBackgroundColor:  #2a62d1AF;
+    --MLSFontColor: #FFFFFF;
+    --MLSButtonIconColor: #FFFFFF;
+
+    /* LockScreen Indicator Colors */
+    --MLSBubbleIndicatorUnfilledStrokeColor: var(--MLSFontColor);
+    --MLSBubbleIndicatorUnfilledBackColor: var(--MLSBackgroundColor);
+    --MLSBubbleIndicatorFilledStrokeColor: var(--MLSFontColor);
+    --MLSBubbleIndicatorFilledBackColor: var(--MLSFontColor);
+    
+    /* Background Color (Should be set by Supplemeentary CSS Files)
+    --MLSBackgroundColor: gray;
+    */
+}
+
+.lockscreen_DigitIndicator_3eHNj{
+    border-color: var(--MLSBubbleIndicatorUnfilledStrokeColor);
+    background: var(--MLSBubbleIndicatorUnfilledBackColor);
+}
+
+.lockscreen_DigitIndicator_3eHNj.lockscreen_Filled_i68Yl {
+    border-color: var(--MLSBubbleIndicatorFilledStrokeColor);
+    background: var(--MLSBubbleIndicatorFilledBackColor);
+}
+
+.lockscreen_Details_aLaNw > div {
+    display: none;
+}
+
+.lockscreen_DetailsGroup_1Ewy7 {
+    display: none !important;
+}
+
+.lockscreen_Container_3rFFU {
+    background: var(--MLSBackgroundColor);
+}
