@@ -2,7 +2,7 @@
 
 # ProtonDB Medals
 
-### This theme adds styles to the medals created by the ProtonDB Medals plugin by OMGDucky
+### This theme adds styles to the medals created by the ProtonDB Medals plugin by OMGDuke
 
 ### Features:
 - Opacity change to show when the badge is selected
