@@ -1,3 +1,3 @@
 # SteamDeckThemes
 
-## Repository housing my Steam deck themes
+### Repository housing my Steam deck themes
