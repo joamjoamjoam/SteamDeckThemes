@@ -3,7 +3,7 @@
 	--KBBackgroundColor: #2a62d170 !important;
     --KBSelectedBackgroundColor: rgba(23, 164, 189, 0.795) !important;
     --KBForegroundColor: #FFFFFF !important;
-    --KBSelectedForegroundColor: #000000FF !important;
+    --KBSelectedForegroundColor: rgb(255, 255, 255) !important;
 	--KBGGAccentColor: #ebdf75 !important;
 	--KBModifierBackgroundColor: #11036ea8 !important;
     --KBModifierForegroundColor: #FFFFFF !important;
@@ -73,7 +73,7 @@
 }
 
 .virtualkeyboard_KeyboardKey_2KhPX.virtualkeyboard_Focused_21EoN {
-    color: var(--KBGGAccentColor);
+    color: var(--KBSelectedForegroundColor);
 }
 
 .DefaultTheme .virtualkeyboard_KeyboardKey_2KhPX.virtualkeyboard_Focused_21EoN::before {
