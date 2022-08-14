@@ -1,6 +1,8 @@
 {
     "name": "Gawr Gura",
     "version": "1.0",
+    "author": "joamjoamjoam",
+    "target": "System-Wide",
     "inject": {
         "shared.css": [
             "SP"
@@ -15,6 +17,24 @@
             "No": {},
             "Yes": {
                 "nofriends.css": [ "SP" ]
+            }
+        },
+        "Keyboard Theme": {
+            "default": "None",
+            "None": {},
+            "Popsicle": {
+                "keyboards/popsicle.css": [ "SP" ]
+            },
+            "Minimal": {
+                "keyboards/minimal.css": [ "SP" ]
+            }
+        },
+        "Colored Toggles": {
+            "default": "Sharky Ocean",
+            "None": {},
+            "Sharky Ocean": {
+                "toggleColors/shared.css": [ "QuickAccess", "SP", "MainMenu" ],
+                "toggleColors/ocean.css": [ "QuickAccess", "SP", "MainMenu" ]
             }
         }
     }

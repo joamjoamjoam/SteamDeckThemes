@@ -1,10 +1,12 @@
 :root {
-    --BackgroundLight: #2a62d1 !important; /* base */
-    --BackgroundRegular: #2a62d1 !important; /* Surface */
-    --BackgroundDark: #11036e !important; /* Overlay */
-    --BorderLight: #c4c3ca !important; /* Higlight High */
-    --BorderDark: #070342 !important; /* Highlight Low */
-    --Accent: #ebdf75 !important; /* Pine */
+    --BackgroundLight: #2a62d1 !important; /* selection Highlight Colors*/
+    --BackgroundRegular: #2a62d1 !important; /* Button Colors*/
+    --BackgroundDark: #11036e !important; /* Background and menu colors */
+    --BorderLight: #c4c3ca !important;
+    --BorderDark: #070342 !important;
+    --Accent: #ebdf75 !important; /*Accent Colors*/
+
+    --fontColors: white !important
 }
 
 .gamepadhomerecentgames_RecentGamesInnerContainer_282X0 {
@@ -41,11 +43,11 @@
 }
 
 .header_Header_1E_SL::before{
-    background-color: #2a62d1AF;
+    background: var(--BackgroundDark);
 }
 
 .lockscreen_DigitIndicator_3eHNj{
-    border-color: white !important;
+    border-color: var(--fontColors);
 }
 
 .lockscreen_Details_aLaNw > div {
@@ -71,7 +73,7 @@
 }
 
 input.searchbar_SearchBox_2a1-s.searchbar_Visible_1bLfc.Focusable::placeholder {
-    color: white;
+    color: var(--fontColors);
 }
 
 .lockscreen_NumericButtonOption_2c4Hz > svg {
