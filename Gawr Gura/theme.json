@@ -36,6 +36,13 @@
                 "toggleColors/shared.css": [ "QuickAccess", "SP", "MainMenu" ],
                 "toggleColors/ocean.css": [ "QuickAccess", "SP", "MainMenu" ]
             }
+        },
+        "Clean Game View": {
+            "default": "Enabled",
+            "Disabled": {}, 
+            "Enabled": {
+                "cleanGameView/shared.css": [ "SP" ]
+            }
         }
     }
 }
