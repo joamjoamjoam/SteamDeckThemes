@@ -15,7 +15,7 @@ Note: Image is just an example on how it can be used with an image.
 ## Minimalist-Icon Lock Screen
 Note: Image is just an example on how it can be used with an image.
 ![Lock Screen](/images/Gawr%20Gura/lockscreenSDIcons.jpg)
-![Lock Screen No Image Icons](/images/Minimal%20Lock%20Screen/lockscreenSDIcons.jpg.jpg)
+![Lock Screen No Image Icons](/images/Minimal%20Lock%20Screen/lockscreenSDIcons.jpg)
 
 
 ## Credits
