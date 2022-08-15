@@ -39,7 +39,15 @@
     background-color: var(--MLSBackgroundColor);
 }
 
+
+.lockscreen_NumericButtonOption_2c4Hz{
+    color: var(--MLSFontColor);
+}
+
 .lockscreen_Indicators_3fJq6 {
     background-color: var(--MLSBackgroundColor);
-    color: var(--MLSFontColor);
+}
+
+.lockscreen_NumericButtonOption_2c4Hz > svg > path {
+    fill: var(--MLSButtonIconColor);
 }

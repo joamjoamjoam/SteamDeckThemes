@@ -11,6 +11,18 @@
         ]
     },
     "patches": {
+        "Transparent Background": {
+            "default": "No",
+            "type": "checkbox",
+            "values":{
+                "No": {},
+                "Yes": {
+                    "LockScreenContainerBackground/Transparent.css": [
+                      "SP"
+                    ]
+                  }
+            }
+        },
         "Lock Screen Type": {
             "default": "Minimal",
             "type": "dropdown",
@@ -22,18 +34,6 @@
                   },
                   "Minimal-Icons": {
                     "minimalLockScreenWithIcons.css": [
-                      "SP"
-                    ]
-                  }
-            }
-        },
-        "Transparent Background": {
-            "default": "No",
-            "type": "checkbox",
-            "values":{
-                "No": {},
-                "Yes": {
-                    "LockScreenContainerBackground/Transparent.css": [
                       "SP"
                     ]
                   }
@@ -125,7 +125,7 @@
                     ]
                   }
             }
-        },        
+        },   
         "Lock Screen Font Color": {
             "default": "White",
             "type": "dropdown",
@@ -298,6 +298,5 @@
                   }
             }
         }
-
     }
 }
