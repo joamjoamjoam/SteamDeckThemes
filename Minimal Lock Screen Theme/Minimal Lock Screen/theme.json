@@ -24,7 +24,7 @@
             }
         },
         "Lock Screen Type": {
-            "default": "Minimal",
+            "default": "Minimal-Icons",
             "type": "dropdown",
             "values":{
                 "Minimal": {
