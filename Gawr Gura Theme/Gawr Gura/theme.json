@@ -3,6 +3,7 @@
     "version": "v1.0",
     "author": "joamjoamjoam",
     "target": "System-Wide",
+    "manifest_version": 2,
     "inject": {
         "shared.css": [
             "SP"
