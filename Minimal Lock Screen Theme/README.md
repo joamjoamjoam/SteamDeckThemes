@@ -19,5 +19,6 @@ Note: Image is just an example on how it can be used with an image.
 
 
 ## Credits
- Thanks [u/blax722](https://www.reddit.com/user/blax722/) for providing the base theme.
+### Thanks [u/blax722](https://www.reddit.com/user/blax722/) for providing the base theme.
+### Credit for example image goes to [u/rotix_art](https://www.reddit.com/r/Hololive/comments/ju0fia/gawr_gura/)
 
