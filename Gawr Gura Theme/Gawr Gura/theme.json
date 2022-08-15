@@ -14,25 +14,17 @@
     },
     "patches": {
         "Switch Like Home": {
-            "default": "Yes",
-            "type": "checkbox",
+            "default": "Yes Without Friends",
+            "type": "dropdown",
             "values":{
                 "No": {},
-                "Yes": {
+                "Yes With Friends": {
                     "switchLikeHome.css": [ "SP" ]
-                }
-            }
-        },
-        "No Friends": {
-            "default": "Yes",
-            "type": "checkbox",
-            "values":{
-                "No": {},
-                "Yes": {
+                },
+                "Yes Without Friends": {
                     "nofriends.css": [ "SP" ]
                 }
             }
-
         },
         "Clean Game View": {
             "default": "Yes",
@@ -45,7 +37,7 @@
             }
         },
         "Lock Screen Theme": {
-            "default": "Minimal",
+            "default": "Minimal with Icons",
             "type": "dropdown",
             "values":{
                 "None": {
