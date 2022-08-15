@@ -1,8 +1,4 @@
 :root{
-    --MLSBackgroundColor:  #2a62d1AF;
-    --MLSFontColor: #FFFFFF;
-    --MLSButtonIconColor: #FFFFFF;
-
     /* LockScreen Indicator Colors */
     --MLSBubbleIndicatorUnfilledStrokeColor: var(--MLSFontColor);
     --MLSBubbleIndicatorUnfilledBackColor: var(--MLSBackgroundColor);
@@ -11,6 +7,8 @@
     
     /* Background Color (Should be set by Supplemeentary CSS Files)
     --MLSBackgroundColor: gray;
+    --MLSFontColor: #FFFFFF;
+    --MLSButtonIconColor: #FFFFFF;
     */
 }
 
@@ -33,5 +31,15 @@
 }
 
 .lockscreen_Container_3rFFU {
-    background: var(--MLSBackgroundColor);
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+.lockscreen_NumericButtonInput_2wl_h {
+    background-color: var(--MLSBackgroundColor);
+}
+
+.lockscreen_Indicators_3fJq6 {
+    background-color: var(--MLSBackgroundColor);
+    color: var(--MLSFontColor);
 }
