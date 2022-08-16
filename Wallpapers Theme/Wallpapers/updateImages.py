@@ -1,5 +1,5 @@
-from asyncio.windows_events import NULL
-import os, shutil, json, base64
+import os, shutil, json, base64, time
+from signal import pause
 
 validExtensions = [".jpg", ".png", ".svg", ".gif", ".jpeg"]
 
@@ -24,6 +24,7 @@ cssFileTypes = {
     libraryCssDir: f":root{{\n\t{libraryVarName}: var(<variableName>);\n}}" \
 }
 
+exitTimeout = 3
 
 
 themeJsonBase = "{ \"name\": \"Wallpapers\", \"version\": \"v1.0\", \"author\": \"joamjoamjoam\", \"target\": \"System-Wide\", \"description\": \"Sets Wallpapers. What did you Expect?\", \"manifest_version\": 2, \"inject\": { }, \"patches\": {  \"Disable Home Overlay\": { \"default\": \"Yes\", \"type\": \"dropdown\", \"values\" : { \"No\" : {}, \"Yes\" : { \"homeScreenOverlay/disabled.css\" : [ \"SP\" ] } } }, \"Home Screen Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } }, \"Lock Screen Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } }, \"Library Background Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } } } }"
@@ -116,16 +117,18 @@ def main():
                 varName = ""
                 varName = varName.join(e for e in fileInfo[0].lower().title() if (e.isalnum() or e.isspace()))
                 varName = " ".join(varName.split())
-                print("using varName " + varName)
                 for cssType, cssTemplate in cssFileTypes.items():
                     if  imageImportedSuccessfully:
                        imageImportedSuccessfully = writeCSSType(cssType, os.path.join(root, file), varName)
                 
                 if imageImportedSuccessfully:
                     # Update Theme.json
-                    themeJson["patches"]["Home Screen Image"]["values"][varName] = { f"{cssDir}/{b64Dir}/{varName}.css": ["SP"], f"{cssDir}/{homeScreenCssDir}/{varName}.css": ["SP"], f"{homeScreenMainPath}": ["SP"]};
-                    themeJson["patches"]["Lock Screen Image"]["values"][varName] = { f"{cssDir}/{b64Dir}/{varName}.css": ["SP"], f"{cssDir}/{lockScreenCssDir}/{varName}.css": ["SP"], f"{lockScreenMainPath}": ["SP"]};
-                    themeJson["patches"]["Library Background Image"]["values"][varName] = { f"{cssDir}/{b64Dir}/{varName}.css": ["SP"], f"{cssDir}/{libraryCssDir}/{varName}.css": ["SP"], f"{libraryMainPath}": ["SP"]};
+                    print("Success")
+                    themeJson["patches"]["Home Screen Image"]["values"][varName] = { f"{cssDir}/{b64Dir}/{varName}.css": ["SP"], f"{cssDir}/{homeScreenCssDir}/{varName}.css": ["SP"], f"{homeScreenMainPath}": ["SP"]}
+                    themeJson["patches"]["Lock Screen Image"]["values"][varName] = { f"{cssDir}/{b64Dir}/{varName}.css": ["SP"], f"{cssDir}/{lockScreenCssDir}/{varName}.css": ["SP"], f"{lockScreenMainPath}": ["SP"]}
+                    themeJson["patches"]["Library Background Image"]["values"][varName] = { f"{cssDir}/{b64Dir}/{varName}.css": ["SP"], f"{cssDir}/{libraryCssDir}/{varName}.css": ["SP"], f"{libraryMainPath}": ["SP"]}
+                else:
+                    print("Failed")
     
     #print(json.dumps(themeJson, indent=4))
 
@@ -137,4 +140,12 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+        print("Image Import was Successful")
+    except Exception as e:
+        print("Error Generating CSS Files: " + str(e))
+    
+    for i in range(0, exitTimeout):
+        print(f"Exiting in {exitTimeout - i} seconds ...")
+        time.sleep(1)
