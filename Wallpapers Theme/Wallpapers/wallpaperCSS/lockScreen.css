@@ -1,0 +1,8 @@
+:root{
+    /*Overridden by Patches*/
+    --WPRLockScreenWallPaper: "";
+}
+
+.lockscreen_Container_3rFFU {
+    background-image: var(--WPRLockScreenWallPaper) !important;
+}

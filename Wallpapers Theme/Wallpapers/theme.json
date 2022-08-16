@@ -1,0 +1,48 @@
+{
+    "name": "Wallpapers",
+    "version": "v1.0",
+    "author": "joamjoamjoam",
+    "target": "System-Wide",
+    "description": "Sets Wallpapers. What did you Expect?",
+    "manifest_version": 2,
+    "inject": {
+    },
+    "patches": {
+        "Home Screen Image": {
+            "default": "None",
+            "type": "dropdown",
+            "values":{
+                  "None": {},
+                  "Charmander" :
+                  {
+                    "userWallpapers/charmander.css" : [ "SP" ],
+                    "wallpaperCSS/homeScreen.css" : [ "SP" ]
+                  } 
+            }
+        },
+        "Lock Screen Image": {
+          "default": "None",
+          "type": "dropdown",
+          "values":{
+                "None": {},
+                "Charmander" :
+                {
+                  "userWallpapers/charmander.css" : [ "SP" ],
+                  "wallpaperCSS/lockScreen.css" : [ "SP" ]
+                } 
+          }
+      },
+      "Library Background Image": {
+        "default": "None",
+        "type": "dropdown",
+        "values":{
+              "None": {},
+              "Charmander" :
+              {
+                "userWallpapers/charmander.css" : [ "SP" ],
+                "wallpaperCSS/library.css" : [ "SP" ]
+              } 
+        }
+    }
+  }
+}

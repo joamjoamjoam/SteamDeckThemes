@@ -1,0 +1,11 @@
+:root{
+
+    /*Overridden by Patches*/
+    --WPRHomeScreenWallPaper: url("");
+}
+
+.gamepadui_BasicHome_3LYP1.gamepadui_OpaqueBackground_b084m { 
+    background-image: var(--WPRHomeScreenWallPaper);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
