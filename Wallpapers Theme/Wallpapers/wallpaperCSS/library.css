@@ -1,8 +1,5 @@
-:root{
-    /*Overridden by Patches*/
-    --WPRLibraryWallPaper: "";
-}
-
 .gamepadlibrary_GamepadLibrary_ZBBhe  {
-    background-image: var(--WPRLibraryWallPaper);
+    background-image: var(--WPRLibraryWallPaper) !important;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
