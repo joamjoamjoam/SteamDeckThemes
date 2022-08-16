@@ -24,7 +24,7 @@ cssFileTypes = {
     libraryCssDir: f":root{{\n\t{libraryVarName}: var(<variableName>);\n}}" \
 }
 
-exitTimeout = 3
+exitTimeout = 5
 
 
 themeJsonBase = "{ \"name\": \"Wallpapers\", \"version\": \"v1.0\", \"author\": \"joamjoamjoam\", \"target\": \"System-Wide\", \"description\": \"Sets Wallpapers. What did you Expect?\", \"manifest_version\": 2, \"inject\": { }, \"patches\": {  \"Disable Home Overlay\": { \"default\": \"Yes\", \"type\": \"dropdown\", \"values\" : { \"No\" : {}, \"Yes\" : { \"homeScreenOverlay/disabled.css\" : [ \"SP\" ] } } }, \"Home Screen Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } }, \"Lock Screen Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } }, \"Library Background Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } } } }"
@@ -108,7 +108,7 @@ def main():
 
     themeJson = json.loads(themeJsonBase)
 
-    for root, dirs, files in os.walk("."):
+    for root, dirs, files in os.walk("./images"):
         for file in files:
             fileInfo = os.path.splitext(file)
             if len(fileInfo) == 2 and ((fileInfo[1].lower()) in validExtensions):
