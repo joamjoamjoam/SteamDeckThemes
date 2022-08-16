@@ -1,5 +1,4 @@
 import os, shutil, json, base64, time
-from signal import pause
 
 validExtensions = [".jpg", ".png", ".svg", ".gif", ".jpeg"]
 
@@ -7,27 +6,31 @@ cssDir = "generatedCSSFiles"
 lockScreenCssDir = "lockscreen"
 homeScreenCssDir = "homescreen"
 libraryCssDir = "library"
+keyboardCssDir = "keyboard"
 b64Dir = "sharedB64Images"
 lockScreenVarName = "--WPRLockScreenWallPaper"
 homeScreenVarName = "--WPRHomeScreenWallPaper"
 libraryVarName = "--WPRLibraryWallPaper"
+keyboardVarName = "--WPRKeyboardWallPaper"
 
 # Main CSS File paths
 lockScreenMainPath = "wallpaperCSS/lockScreen.css"
 homeScreenMainPath = "wallpaperCSS/homeScreen.css"
 libraryMainPath = "wallpaperCSS/library.css"
+keyboardMainPath = "wallpaperCSS/keyboard.css"
 
 cssFileTypes = { 
     b64Dir: f":root{{\n\t<variableName>: url('data:image/<imgType>;base64,<b64String>') !important;\n}}", \
     lockScreenCssDir: f":root{{\n\t{lockScreenVarName}: var(<variableName>);\n}}", \
     homeScreenCssDir: f":root{{\n\t{homeScreenVarName}: var(<variableName>);\n}}", \
-    libraryCssDir: f":root{{\n\t{libraryVarName}: var(<variableName>);\n}}" \
+    libraryCssDir: f":root{{\n\t{libraryVarName}: var(<variableName>);\n}}", \
+    keyboardCssDir: f":root{{\n\t{keyboardVarName}: var(<variableName>);\n}}" \
 }
 
 exitTimeout = 5
 
 
-themeJsonBase = "{ \"name\": \"Wallpapers\", \"version\": \"v1.0\", \"author\": \"joamjoamjoam\", \"target\": \"System-Wide\", \"description\": \"Sets Wallpapers. What did you Expect?\", \"manifest_version\": 2, \"inject\": { }, \"patches\": {  \"Disable Home Overlay\": { \"default\": \"Yes\", \"type\": \"dropdown\", \"values\" : { \"No\" : {}, \"Yes\" : { \"homeScreenOverlay/disabled.css\" : [ \"SP\" ] } } }, \"Home Screen Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } }, \"Lock Screen Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } }, \"Library Background Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } } } }"
+themeJsonBase = "{ \"name\": \"Wallpapers\", \"version\": \"v1.0\", \"author\": \"joamjoamjoam\", \"target\": \"System-Wide\", \"description\": \"Sets Wallpapers. What did you Expect?\", \"manifest_version\": 2, \"inject\": { }, \"patches\": {  \"Disable Home Overlay\": { \"default\": \"Yes\", \"type\": \"dropdown\", \"values\" : { \"No\" : {}, \"Yes\" : { \"homeScreenOverlay/disabled.css\" : [ \"SP\" ] } } }, \"Home Screen Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } }, \"Lock Screen Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } }, \"Library Background Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } }, \"Keyboard Background Image\": { \"default\": \"None\", \"type\": \"dropdown\", \"values\":{ \"None\": {} } } } }"
 
 def getB64ForFile(file):
     rv = ""
@@ -105,6 +108,7 @@ def main():
     os.mkdir(cssDir + "/" + homeScreenCssDir)
     os.mkdir(cssDir + "/" + libraryCssDir)
     os.mkdir(cssDir + "/" + b64Dir)
+    os.mkdir(cssDir + "/" + keyboardCssDir)
 
     themeJson = json.loads(themeJsonBase)
 
@@ -127,6 +131,7 @@ def main():
                     themeJson["patches"]["Home Screen Image"]["values"][varName] = { f"{cssDir}/{b64Dir}/{varName}.css": ["SP"], f"{cssDir}/{homeScreenCssDir}/{varName}.css": ["SP"], f"{homeScreenMainPath}": ["SP"]}
                     themeJson["patches"]["Lock Screen Image"]["values"][varName] = { f"{cssDir}/{b64Dir}/{varName}.css": ["SP"], f"{cssDir}/{lockScreenCssDir}/{varName}.css": ["SP"], f"{lockScreenMainPath}": ["SP"]}
                     themeJson["patches"]["Library Background Image"]["values"][varName] = { f"{cssDir}/{b64Dir}/{varName}.css": ["SP"], f"{cssDir}/{libraryCssDir}/{varName}.css": ["SP"], f"{libraryMainPath}": ["SP"]}
+                    themeJson["patches"]["Keyboard Background Image"]["values"][varName] = { f"{cssDir}/{b64Dir}/{varName}.css": ["SP"], f"{cssDir}/{keyboardCssDir}/{varName}.css": ["SP"], f"{keyboardMainPath}": ["SP"]}
                 else:
                     print("Failed")
     

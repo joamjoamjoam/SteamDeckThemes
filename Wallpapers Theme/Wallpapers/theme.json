@@ -39,6 +39,13 @@
             "values": {
                 "None": {}
             }
+        },
+        "Keyboard Background Image": {
+            "default": "None",
+            "type": "dropdown",
+            "values": {
+                "None": {}
+            }
         }
     }
 }
