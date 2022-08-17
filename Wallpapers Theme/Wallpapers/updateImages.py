@@ -5,11 +5,12 @@ validExtensions = [".jpg", ".png", ".svg", ".gif", ".jpeg"]
 cssDir = "generatedCSSFiles"
 b64Dir = "sharedB64Images"
 fallbackCSSDir = "fallbackCSS"
-cssVariableTemplate = f"/*This File was Auto-Generated Do Not Modify*/\n\n:root{{\n\t--<customVarName>: var(--<imageVariableName>, radial-gradient(155.42% 100% at 0% 0%, #151f25 0 0%, #152533 100%));\n}}"
-fallbackCssVariableTemplate = f"/*This File was Auto-Generated Do Not Modify*/\n\n:root{{\n\t--<customVarName>: radial-gradient(155.42% 100% at 0% 0%, #151f25 0 0%, #152533 100%) !important;\n}}"
+autoGenHeader = "/* This File was Auto-Generated Do Not Modify */\n\n"
+cssVariableTemplate = f"{autoGenHeader}:root{{\n\t--<customVarName>: var(--<imageVariableName>, radial-gradient(155.42% 100% at 0% 0%, #151f25 0 0%, #152533 100%));\n}}"
+fallbackCssVariableTemplate = f"{autoGenHeader}:root{{\n\t--<customVarName>: radial-gradient(155.42% 100% at 0% 0%, #151f25 0 0%, #152533 100%) !important;\n}}"
 
 cssFileTypes = { 
-    b64Dir: f"/*This File was Auto-Generated Do Not Modify*/\n\n:root{{\n\t--<imageVariableName>: url('data:image/<imgType>;base64,<b64String>') !important;\n}}",
+    b64Dir: f"{autoGenHeader}:root{{\n\t--<imageVariableName>: url('data:image/<imgType>;base64,<b64String>') !important;\n}}",
     fallbackCSSDir: fallbackCssVariableTemplate
 }
 
