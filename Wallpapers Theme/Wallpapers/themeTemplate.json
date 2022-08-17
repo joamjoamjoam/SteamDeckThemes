@@ -1,0 +1,60 @@
+{
+    "name": "Wallpapers",
+    "version": "v1.0",
+    "author": "joamjoamjoam",
+    "target": "System-Wide",
+    "description": "Sets Wallpapers. What did you Expect?",
+    "manifest_version": 2,
+    "inject": {
+        "wallpaperCSS/homeScreen.css" : [ "SP" ],
+        "wallpaperCSS/keyboard.css" : [ "SP" ],
+        "wallpaperCSS/library.css" : [ "SP" ],
+        "wallpaperCSS/lockScreen.css" : [ "SP" ]
+    },
+    "patches": {
+        "Disable Home Overlay": {
+            "default": "Yes",
+            "type": "checkbox",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "homeScreenOverlay/disabled.css": [
+                        "SP"
+                    ]
+                }
+            }
+        },
+        "Home Screen Image": {
+            "default": "None",
+            "type": "dropdown-image",
+            "var": "WPRHomeScreenWallPaper",
+            "values": {
+                "None": {}
+            }
+        },
+        "Lock Screen Image": {
+            "default": "None",
+            "type": "dropdown-image",
+            "var": "WPRLockScreenWallPaper",
+            "values": {
+                "None": {}
+            }
+        },
+        "Library Background Image": {
+            "default": "None",
+            "type": "dropdown-image",
+            "var": "WPRLibraryWallPaper",
+            "values": {
+                "None": {}
+            }
+        },
+        "Keyboard Background Image": {
+            "default": "None",
+            "type": "dropdown-image",
+            "var": "WPRKeyboardWallPaper",
+            "values": {
+                "None": {}
+            }
+        }
+    }
+}
