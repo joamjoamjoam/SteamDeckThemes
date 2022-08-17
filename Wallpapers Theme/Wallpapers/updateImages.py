@@ -1,4 +1,4 @@
-import os, shutil, json, base64, time, re, logger
+import os, shutil, json, base64, time, re
 
 validExtensions = [".jpg", ".png", ".svg", ".gif", ".jpeg"]
 
