@@ -1,0 +1,134 @@
+{
+    "name": "ZColored UI",
+    "version": "v1.0",
+    "author": "joamjoamjoam",
+    "target": "System-Wide",
+    "manifest_version": 2,
+    "inject": {
+        "shared.css": [
+            "SP", "QuickAccess", "MainMenu"
+        ],
+        "Components/sideMenus.css": [
+            "QuickAccess", "MainMenu"
+        ],
+        "Components/lockscreen.css": [
+            "SP"
+        ],
+        "Components/homeScreen.css": [
+            "SP"
+        ],
+        "Components/library.css": [
+            "SP"
+        ]
+    },
+    "patches": {
+        "Set LockScreen Container Background Color": {
+            "default": "None",
+            "type": "dropdown",
+            "components": [
+                    { 
+                        "name" : "Custom Color",
+                        "type" : "color-picker",
+                        "default" : "#34ebd8FF",
+                        "css_variable" : "CUIInjectedColorLockContScreenBackgroundColor",
+                        "tabs" : ["SP"],
+                        "on" : "Custom"
+                    } 
+            ],
+            "values" : {
+                "None" : {},
+                "Custom" : {}
+            }
+        },
+        "Set LockScreen Background Color": {
+            "default": "None",
+            "type": "dropdown",
+            "components": [
+                    { 
+                        "name" : "Custom Color",
+                        "type" : "color-picker",
+                        "default" : "#2a62d1AF",
+                        "css_variable" : "CUIInjectedColorLockScreenBackgroundColor",
+                        "tabs" : ["SP"],
+                        "on" : "Custom"
+                    } 
+            ],
+            "values" : {
+                "None" : {},
+                "Custom" : {}
+            }
+        },
+        "Set LockScreen Font Color": {
+            "default": "None",
+            "type": "dropdown",
+            "components": [
+                    { 
+                        "name" : "Custom Color",
+                        "type" : "color-picker",
+                        "default" : "#FFFFFFFF",
+                        "css_variable" : "CUIInjectedColorLockScreenFontColor",
+                        "tabs" : ["SP"],
+                        "on" : "Custom"
+                    } 
+            ],
+            "values" : {
+                "None" : {},
+                "Custom" : {}
+            }
+        },
+        "Set LockScreen Icon Color": {
+            "default": "None",
+            "type": "dropdown",
+            "components": [
+                { 
+                    "name" : "Custom Color",
+                    "type" : "color-picker",
+                    "default" : "#FFFFFFFF",
+                    "css_variable" : "CUIInjectedColorLockScreenButtonIconColor",
+                    "tabs" : ["SP"],
+                    "on" : "Custom"
+                } 
+            ],
+            "values" : {
+                "None" : {},
+                "Custom" : {}
+            }
+        },
+        "Set Lock Screen Bubbles Back Color": {
+            "default": "None",
+            "type": "dropdown",
+            "components": [
+                { 
+                    "name" : "Custom Color",
+                    "type" : "color-picker",
+                    "default" : "#00000000",
+                    "css_variable" : "CUIInjectedColorBubbleIndicatorContBackColor",
+                    "tabs" : ["SP"],
+                    "on" : "Custom"
+                } 
+            ],
+            "values" : {
+                "None" : {},
+                "Custom" : {}
+            }
+        },
+        "Home Menu Background Color": {
+            "default": "None",
+            "type": "dropdown",
+            "components": [
+                { 
+                    "name" : "Custom Color",
+                    "type" : "color-picker",
+                    "default" : "#0e141bFF",
+                    "css_variable" : "CUIInjectedColorMainScreenBackgroundColor",
+                    "tabs" : ["SP"],
+                    "on" : "Custom"
+                } 
+            ],
+            "values" : {
+                "None" : {},
+                "Custom" : {}
+            }
+        }
+    }
+}

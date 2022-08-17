@@ -27,7 +27,7 @@
         "Home Screen Image": {
             "default": "None",
             "type": "dropdown-image",
-            "var": "WPRHomeScreenWallPaper",
+            "css_variable": "WPRHomeScreenWallPaper",
             "values": {
                 "None": {}
             }
@@ -35,7 +35,7 @@
         "Lock Screen Image": {
             "default": "None",
             "type": "dropdown-image",
-            "var": "WPRLockScreenWallPaper",
+            "css_variable": "WPRLockScreenWallPaper",
             "values": {
                 "None": {}
             }
@@ -43,7 +43,7 @@
         "Library Background Image": {
             "default": "None",
             "type": "dropdown-image",
-            "var": "WPRLibraryWallPaper",
+            "css_variable": "WPRLibraryWallPaper",
             "values": {
                 "None": {}
             }
@@ -51,7 +51,7 @@
         "Keyboard Background Image": {
             "default": "None",
             "type": "dropdown-image",
-            "var": "WPRKeyboardWallPaper",
+            "css_variable": "WPRKeyboardWallPaper",
             "values": {
                 "None": {}
             }

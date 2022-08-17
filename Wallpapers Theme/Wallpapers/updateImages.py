@@ -107,15 +107,15 @@ def main():
 
     for k,v in themeJson["patches"].items():
         if v["type"] == "dropdown-image":
-            if "var" in v.keys() and re.match(r"[A-Za-z0-9_-]+", v["var"]):
-                tmpVar = v["var"]
+            if "css_variable" in v.keys() and re.match(r"[A-Za-z0-9_-]+", v["css_variable"]):
+                tmpVar = v["css_variable"]
                 log(tmpVar)
                 os.mkdir(f'{cssDir}/{tmpVar}')
-                cssFileTypes[v["var"]] = cssVariableTemplate.replace("<customVarName>", v["var"])
+                cssFileTypes[v["css_variable"]] = cssVariableTemplate.replace("<customVarName>", v["css_variable"])
 
                 if "values" in v.keys():
-                    v["values"]["None"] = {f"{cssDir}/{fallbackCSSDir}/{v['var']}.css": ["SP"]}
-                    writeCSSType(fallbackCSSDir, "", v['var'])
+                    v["values"]["None"] = {f"{cssDir}/{fallbackCSSDir}/{v['css_variable']}.css": ["SP"]}
+                    writeCSSType(fallbackCSSDir, "", v['css_variable'])
                 if "default" in v.keys() and "None" != v["default"]:
                     v["default"] = "None"
 
@@ -145,9 +145,9 @@ def main():
                     log("Success")
                     for k,v in themeJson["patches"].items():
                         if v["type"] == "dropdown-image":
-                            log(f"Adding {imageVarName} for var {v['var']}")
-                            if "var" in v.keys() and re.match(r"[A-Za-z0-9_-]+", v["var"]):
-                                themeJson["patches"][k]["values"][imageVarName] = { f"{cssDir}/{b64Dir}/{imageVarName}.css": ["SP"], f'{cssDir}/{v["var"]}/{imageVarName}.css': ["SP"]}
+                            log(f"Adding {imageVarName} for var {v['css_variable']}")
+                            if "css_variable" in v.keys() and re.match(r"[A-Za-z0-9_-]+", v["css_variable"]):
+                                themeJson["patches"][k]["values"][imageVarName] = { f"{cssDir}/{b64Dir}/{imageVarName}.css": ["SP"], f'{cssDir}/{v["css_variable"]}/{imageVarName}.css': ["SP"]}
                             else:
                                 # No Var replace Normal dropdown Patch
                                 v["type"] = "dropdown"
@@ -159,8 +159,8 @@ def main():
 
     # Sanitize Extended Types
     for k,v in themeJson["patches"].items():
-        if "var" in v.keys():
-            del v["var"]
+        if "css_variable" in v.keys():
+            del v["css_variable"]
         if "type" in v.keys() and v["type"] == "dropdown-image":
             v["type"] = "dropdown"
 
