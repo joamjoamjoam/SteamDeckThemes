@@ -17,7 +17,7 @@ cssFileTypes = {
 imageCount = 0
 
 
-def log(message, level):
+def log(message):
     #print(message)
     pass
 
