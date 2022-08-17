@@ -1,4 +1,4 @@
-import os, shutil, json, base64, time, re
+import os, shutil, json, base64, time, re, logger
 
 validExtensions = [".jpg", ".png", ".svg", ".gif", ".jpeg"]
 
@@ -14,7 +14,12 @@ cssFileTypes = {
     fallbackCSSDir: fallbackCssVariableTemplate
 }
 
-exitTimeout = 5
+imageCount = 0
+
+
+def log(message, level):
+    #print(message)
+    pass
 
 def getB64ForFile(file):
     rv = ""
@@ -79,7 +84,7 @@ def writeCSSType(type, filePath, varName):
             f.write(cssFileTypes[type].replace("<imageVariableName>", variableName))
             f.close()
     except Exception as e:
-        print(f"Error  writing type {type}: {str(e)}")
+        log(f"Error  writing type {type}: {str(e)}")
         rv = False
 
     return rv
@@ -87,6 +92,7 @@ def writeCSSType(type, filePath, varName):
 
 
 def main():
+    global imageCount
     os.chdir(os.path.dirname(os.path.realpath(__file__)))
     if os.path.isdir(cssDir):
         shutil.rmtree(cssDir)
@@ -103,7 +109,7 @@ def main():
         if v["type"] == "dropdown-image":
             if "var" in v.keys() and re.match(r"[A-Za-z0-9_-]+", v["var"]):
                 tmpVar = v["var"]
-                print(tmpVar)
+                log(tmpVar)
                 os.mkdir(f'{cssDir}/{tmpVar}')
                 cssFileTypes[v["var"]] = cssVariableTemplate.replace("<customVarName>", v["var"])
 
@@ -123,7 +129,7 @@ def main():
         for file in files:
             fileInfo = os.path.splitext(file)
             if len(fileInfo) == 2 and ((fileInfo[1].lower()) in validExtensions):
-                print("Creating CSS files for " + file)
+                log("Creating CSS files for " + file)
                 imageImportedSuccessfully = True
                 imageVarName = ""
                 imageVarName = imageVarName.join(e for e in fileInfo[0].lower().title() if (e.isalnum() or e.isspace()))
@@ -136,21 +142,20 @@ def main():
                 
                 if imageImportedSuccessfully:
                     # Update Theme.json
-                    print("Success")
+                    log("Success")
                     for k,v in themeJson["patches"].items():
                         if v["type"] == "dropdown-image":
-                            print(f"Adding {imageVarName} for var {v['var']}")
+                            log(f"Adding {imageVarName} for var {v['var']}")
                             if "var" in v.keys() and re.match(r"[A-Za-z0-9_-]+", v["var"]):
                                 themeJson["patches"][k]["values"][imageVarName] = { f"{cssDir}/{b64Dir}/{imageVarName}.css": ["SP"], f'{cssDir}/{v["var"]}/{imageVarName}.css': ["SP"]}
                             else:
                                 # No Var replace Normal dropdown Patch
                                 v["type"] = "dropdown"
+                    imageCount += 1
 
                     
                 else:
-                    print("Failed")
-    
-    #print(json.dumps(themeJson, indent=4))
+                    log("Failed")
 
     # Sanitize Extended Types
     for k,v in themeJson["patches"].items():
@@ -168,12 +173,11 @@ def main():
 
 
 if __name__ == '__main__':
+    startTime = time.time()
     try:
         main()
-        print("Image Import was Successful")
+        log("Image Import was Successful")
     except Exception as e:
-        print("Error Generating CSS Files: " + str(e))
-    
-    for i in range(0, exitTimeout):
-        print(f"Exiting in {exitTimeout - i} seconds ...")
-        time.sleep(1)
+        log("Error Generating CSS Files: " + str(e))
+
+    log(f"CSS Generated for {imageCount} images in {1000 * (time.time() - startTime)} ms")
