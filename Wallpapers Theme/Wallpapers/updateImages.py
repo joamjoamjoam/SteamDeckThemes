@@ -4,10 +4,13 @@ validExtensions = [".jpg", ".png", ".svg", ".gif", ".jpeg"]
 
 cssDir = "generatedCSSFiles"
 b64Dir = "sharedB64Images"
-cssVariableTemplate = f":root{{\n\t--<customVarName>: var(--<imageVariableName>);\n}}"
+fallbackCSSDir = "fallbackCSS"
+cssVariableTemplate = f"/*This File was Auto-Generated Do Not Modify*/\n\n:root{{\n\t--<customVarName>: var(--<imageVariableName>, radial-gradient(155.42% 100% at 0% 0%, #151f25 0 0%, #152533 100%));\n}}"
+fallbackCssVariableTemplate = f"/*This File was Auto-Generated Do Not Modify*/\n\n:root{{\n\t--<customVarName>: radial-gradient(155.42% 100% at 0% 0%, #151f25 0 0%, #152533 100%) !important;\n}}"
 
 cssFileTypes = { 
-    b64Dir: f":root{{\n\t--<imageVariableName>: url('data:image/<imgType>;base64,<b64String>') !important;\n}}"
+    b64Dir: f"/*This File was Auto-Generated Do Not Modify*/\n\n:root{{\n\t--<imageVariableName>: url('data:image/<imgType>;base64,<b64String>') !important;\n}}",
+    fallbackCSSDir: fallbackCssVariableTemplate
 }
 
 exitTimeout = 5
@@ -58,11 +61,16 @@ def writeCSSType(type, filePath, varName):
         
         variableName = "WPRImage" + varName.replace(" ", "")
 
-        if type == "sharedB64Images":
+        if type == b64Dir:
             b64 = getB64ForFile(filePath)
 
             f = open(f"{cssDir}/{type}/{fileName}" , "w")
             tmpStr = cssFileTypes[type].replace("<imageVariableName>", variableName).replace("<b64String>", b64).replace("<imgType>", getImgTypeTagForFileExt(fileInfo[1]))
+            f.write(tmpStr)
+            f.close()
+        elif type == fallbackCSSDir:
+            f = open(f"{cssDir}/{type}/{fileName}" , "w")
+            tmpStr = cssFileTypes[type].replace("<customVarName>", varName)
             f.write(tmpStr)
             f.close()
         else:
@@ -88,6 +96,7 @@ def main():
     # Create Folder Structure
     os.mkdir(cssDir)
     os.mkdir(f"{cssDir}/{b64Dir}")
+    os.mkdir(f"{cssDir}/{fallbackCSSDir}")
 
     for k,v in themeJson["patches"].items():
         if v["type"] == "dropdown-image":
@@ -96,7 +105,13 @@ def main():
                 print(tmpVar)
                 os.mkdir(f'{cssDir}/{tmpVar}')
                 cssFileTypes[v["var"]] = cssVariableTemplate.replace("<customVarName>", v["var"])
-                print(cssFileTypes)
+
+                if "values" in v.keys():
+                    v["values"]["None"] = {f"{cssDir}/{fallbackCSSDir}/{v['var']}.css": ["SP"]}
+                    writeCSSType(fallbackCSSDir, "", v['var'])
+                if "default" in v.keys() and "None" != v["default"]:
+                    v["default"] = "None"
+
             else:
                 raise ValueError(f'Invalid css variable name')
 
@@ -115,7 +130,8 @@ def main():
                 
                 for cssType, cssTemplate in cssFileTypes.items():
                     if  imageImportedSuccessfully:
-                       imageImportedSuccessfully = writeCSSType(cssType, os.path.join(root, file), imageVarName)
+                        if cssType != fallbackCSSDir:
+                            imageImportedSuccessfully = writeCSSType(cssType, os.path.join(root, file), imageVarName)
                 
                 if imageImportedSuccessfully:
                     # Update Theme.json
