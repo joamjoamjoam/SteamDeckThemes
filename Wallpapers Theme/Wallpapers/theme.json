@@ -32,166 +32,32 @@
                 }
             }
         },
-        "Set Background Color": {
-            "default": "Blue",
-            "type": "dropdown",
-            "components": [
-                {
-                    "name": "Custom Color",
-                    "type": "color-picker",
-                    "default": "blue",
-                    "css_variable": "myBackgroundColor",
-                    "tabs": [
-                        "SP",
-                        "QuickAccess",
-                        "MainMenu"
-                    ],
-                    "on": "Custom"
-                }
-            ],
-            "values": {
-                "Blue": {},
-                "Custom": {}
-            }
-        },
         "Home Screen Image": {
             "default": "None",
             "type": "dropdown",
             "values": {
-                "None": {
-                    "generatedCSSFiles/fallbackCSS/WPRHomeScreenWallPaper.css": [
-                        "SP"
-                    ]
-                },
-                "62Fb2B49E5B01": {
-                    "generatedCSSFiles/sharedB64Images/62Fb2B49E5B01.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRHomeScreenWallPaper/62Fb2B49E5B01.css": [
-                        "SP"
-                    ]
-                },
-                "Lockscreen": {
-                    "generatedCSSFiles/sharedB64Images/Lockscreen.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRHomeScreenWallPaper/Lockscreen.css": [
-                        "SP"
-                    ]
-                },
-                "RotatingEarthLarge": {
-                    "generatedCSSFiles/sharedB64Images/RotatingEarthLarge.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRHomeScreenWallPaper/RotatingEarthLarge.css": [
-                        "SP"
-                    ]
-                }
+                "None": {}
             }
         },
         "Lock Screen Image": {
             "default": "None",
             "type": "dropdown",
             "values": {
-                "None": {
-                    "generatedCSSFiles/fallbackCSS/WPRLockScreenWallPaper.css": [
-                        "SP"
-                    ]
-                },
-                "62Fb2B49E5B01": {
-                    "generatedCSSFiles/sharedB64Images/62Fb2B49E5B01.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRLockScreenWallPaper/62Fb2B49E5B01.css": [
-                        "SP"
-                    ]
-                },
-                "Lockscreen": {
-                    "generatedCSSFiles/sharedB64Images/Lockscreen.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRLockScreenWallPaper/Lockscreen.css": [
-                        "SP"
-                    ]
-                },
-                "RotatingEarthLarge": {
-                    "generatedCSSFiles/sharedB64Images/RotatingEarthLarge.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRLockScreenWallPaper/RotatingEarthLarge.css": [
-                        "SP"
-                    ]
-                }
+                "None": {}
             }
         },
         "Library Background Image": {
             "default": "None",
             "type": "dropdown",
             "values": {
-                "None": {
-                    "generatedCSSFiles/fallbackCSS/WPRLibraryWallPaper.css": [
-                        "SP"
-                    ]
-                },
-                "62Fb2B49E5B01": {
-                    "generatedCSSFiles/sharedB64Images/62Fb2B49E5B01.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRLibraryWallPaper/62Fb2B49E5B01.css": [
-                        "SP"
-                    ]
-                },
-                "Lockscreen": {
-                    "generatedCSSFiles/sharedB64Images/Lockscreen.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRLibraryWallPaper/Lockscreen.css": [
-                        "SP"
-                    ]
-                },
-                "RotatingEarthLarge": {
-                    "generatedCSSFiles/sharedB64Images/RotatingEarthLarge.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRLibraryWallPaper/RotatingEarthLarge.css": [
-                        "SP"
-                    ]
-                }
+                "None": {}
             }
         },
         "Keyboard Background Image": {
             "default": "None",
             "type": "dropdown",
             "values": {
-                "None": {
-                    "generatedCSSFiles/fallbackCSS/WPRKeyboardWallPaper.css": [
-                        "SP"
-                    ]
-                },
-                "62Fb2B49E5B01": {
-                    "generatedCSSFiles/sharedB64Images/62Fb2B49E5B01.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRKeyboardWallPaper/62Fb2B49E5B01.css": [
-                        "SP"
-                    ]
-                },
-                "Lockscreen": {
-                    "generatedCSSFiles/sharedB64Images/Lockscreen.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRKeyboardWallPaper/Lockscreen.css": [
-                        "SP"
-                    ]
-                },
-                "RotatingEarthLarge": {
-                    "generatedCSSFiles/sharedB64Images/RotatingEarthLarge.css": [
-                        "SP"
-                    ],
-                    "generatedCSSFiles/WPRKeyboardWallPaper/RotatingEarthLarge.css": [
-                        "SP"
-                    ]
-                }
+                "None": {}
             }
         }
     }

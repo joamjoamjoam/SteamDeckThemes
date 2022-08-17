@@ -161,6 +161,8 @@ def main():
     for k,v in themeJson["patches"].items():
         if "css_variable" in v.keys():
             del v["css_variable"]
+            if "values" in v.keys():
+                v["values"]["None"] = { }
         if "type" in v.keys() and v["type"] == "dropdown-image":
             v["type"] = "dropdown"
 
