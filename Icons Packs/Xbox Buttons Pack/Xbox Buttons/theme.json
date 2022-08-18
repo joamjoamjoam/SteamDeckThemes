@@ -1,0 +1,19 @@
+{
+    "name": "Xbox Button Icons",
+    "version": "v1.0",
+    "author": "joamjoamjoam",
+    "target": "Lock Screen",
+    "description": "Show Xbox Button icons in UI",
+    "manifest_version": 2,
+    "inject": {
+        "IconsB64.css": [
+          "SP", "QuickAccess", "MainMenu"
+        ],
+        "XBPShared.css": [
+          "SP", "QuickAccess", "MainMenu"
+        ]
+    },
+    "patches": {
+        
+    }
+}

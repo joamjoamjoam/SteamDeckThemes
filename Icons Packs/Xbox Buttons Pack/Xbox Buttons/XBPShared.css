@@ -1,0 +1,20 @@
+
+img[src="/steaminputglyphs/shared_button_a.svg"]{
+    content: var(--XBPAButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_button_b.svg"]{
+    content: var(--XBPBButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_button_x.svg"]{
+    content: var(--XBPXButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_button_y.svg"]{
+    content: var(--XBPYButtonImage);
+}
+
+img[src="/steaminputglyphs/sd_button_menu.svg"]{
+    content: var(--XBPMenuButtonImage);
+}
