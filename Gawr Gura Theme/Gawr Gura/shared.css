@@ -47,6 +47,23 @@ input.searchbar_SearchBox_2a1-s.searchbar_Visible_1bLfc.Focusable::placeholder {
     color: var(--GGfontColor);
 }
 
+.deckyStoreCard{
+    background-color: #2a62d1AF !important;
+}
+
+.deckyStoreCard .deckyStoreCardHeader .quickaccessmenu_Text_2B2VB{
+    color: var(--GGfontColor);
+}
+
+.deckyStoreCardInfo{
+    color: var(--GGfontColor);
+}
+
+div.deckyStoreCardVersionDropdownContainer > button, div.deckyStoreCardInstallButtonContainer > button{
+    background-color: var(--GGBackgroundDark) !important;
+    color: var(--GGfontColor) !important;
+}
+
 
 /* main menu */
 .gamepadui_BasicHome_3LYP1.gamepadui_OpaqueBackground_b084m {

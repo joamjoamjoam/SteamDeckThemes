@@ -19,6 +19,9 @@
         ],
         "Components/library.css": [
             "SP"
+        ],
+        "Components/deckyReactStore.css": [
+            "SP"
         ]
     },
     "patches": {
