@@ -64,6 +64,11 @@ div.deckyStoreCardVersionDropdownContainer > button, div.deckyStoreCardInstallBu
     color: var(--GGfontColor) !important;
 }
 
+div.deckyStoreCardVersionDropdownContainer > button.gpfocuswithin, div.deckyStoreCardInstallButtonContainer > button.gpfocuswithin{
+    background-color: var(--GGBackgroundRegular) !important;
+    color: var(--GGfontColor) !important;
+}
+
 
 /* main menu */
 .gamepadui_BasicHome_3LYP1.gamepadui_OpaqueBackground_b084m {
