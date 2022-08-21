@@ -2,181 +2,181 @@
 /* Steam UI Replacements*/
 
 img[src="/steaminputglyphs/shared_button_a.svg"]{
-    content: var(--ICPAButtonImage);
+    content: var(--ICPAButtonImage, url("/steaminputglyphs/shared_button_a.svg"));
 }
 
 img[src="/steaminputglyphs/shared_button_b.svg"]{
-    content: var(--ICPBButtonImage);
+    content: var(--ICPBButtonImage, url("/steaminputglyphs/shared_button_b.svg"));
 }
 
 img[src="/steaminputglyphs/shared_button_x.svg"]{
-    content: var(--ICPXButtonImage);
+    content: var(--ICPXButtonImage, url("/steaminputglyphs/shared_button_x.svg"));
 }
 
 img[src="/steaminputglyphs/shared_button_y.svg"]{
-    content: var(--ICPYButtonImage);
+    content: var(--ICPYButtonImage, url("/steaminputglyphs/shared_button_y.svg"));
 }
 
 img[src="/steaminputglyphs/sd_button_menu.svg"]{
-    content: var(--ICPMenuButtonImage);
+    content: var(--ICPMenuButtonImage, url("/steaminputglyphs/sd_button_menu.svg"));
 }
 
 img[src="/steaminputglyphs/sd_button_view.svg"]{
-    content: var(--ICPViewButtonImage);
+    content: var(--ICPViewButtonImage, url("/steaminputglyphs/sd_button_view.svg"));
 }
 
 img[src="/steaminputglyphs/sd_l1.svg"]{
-    content: var(--ICPL1ButtonImage);
+    content: var(--ICPL1ButtonImage, url("/steaminputglyphs/sd_l1.svg"));
 }
 
 img[src="/steaminputglyphs/sd_l2.svg"]{
-    content: var(--ICPL2ButtonImage);
+    content: var(--ICPL2ButtonImage, url("/steaminputglyphs/sd_l2.svg"));
 }
 
 img[src="/steaminputglyphs/shared_l3.svg"]{
-    content: var(--ICPL3ButtonImage);
+    content: var(--ICPL3ButtonImage, url("/steaminputglyphs/shared_l3.svg"));
 }
 
 img[src="/steaminputglyphs/sd_r1.svg"]{
-    content: var(--ICPR1ButtonImage);
+    content: var(--ICPR1ButtonImage, url("/steaminputglyphs/sd_r1.svg"));
 }
 img[src="/steaminputglyphs/sd_r2.svg"]{
-    content: var(--ICPR2ButtonImage);
+    content: var(--ICPR2ButtonImage, url("/steaminputglyphs/sd_r2.svg"));
 }
 img[src="/steaminputglyphs/shared_r3.svg"]{
-    content: var(--ICPR3ButtonImage);
+    content: var(--ICPR3ButtonImage, url("/steaminputglyphs/shared_r3.svg"));
 }
 
 img[src="/steaminputglyphs/shared_dpad.svg"]{
-    content: var(--ICPDpadNoDirectionButtonImage);
+    content: var(--ICPDpadNoDirectionButtonImage, url("/steaminputglyphs/shared_dpad.svg"));
 }
 
 img[src="/steaminputglyphs/shared_dpad_up.svg"]{
-    content: var(--ICPDpadUpButtonImage);
+    content: var(--ICPDpadUpButtonImage, url("/steaminputglyphs/shared_dpad_up.svg"));
 }
 img[src="/steaminputglyphs/shared_dpad_right.svg"]{
-    content: var(--ICPDpadRightButtonImage);
+    content: var(--ICPDpadRightButtonImage, url("/steaminputglyphs/shared_dpad_right.svg"));
 }
 img[src="/steaminputglyphs/shared_dpad_left.svg"]{
-    content: var(--ICPDpadLeftButtonImage);
+    content: var(--ICPDpadLeftButtonImage, url("/steaminputglyphs/shared_dpad_left.svg"));
 }
 img[src="/steaminputglyphs/shared_dpad_down.svg"]{
-    content: var(--ICPDpadDownButtonImage);
+    content: var(--ICPDpadDownButtonImage, url("/steaminputglyphs/shared_dpad_down.svg"));
 }
 
 
 img[src="/steaminputglyphs/shared_rstick.svg"]{
-    content: var(--ICPRightStickNoDirectionButtonImage);
+    content: var(--ICPRightStickNoDirectionButtonImage, url("/steaminputglyphs/shared_rstick.svg"));
 }
 img[src="/steaminputglyphs/shared_rstick_up.svg"]{
-    content: var(--ICPRightStickUpButtonImage);
+    content: var(--ICPRightStickUpButtonImage, url("/steaminputglyphs/shared_rstick_up.svg"));
 }
 img[src="/steaminputglyphs/shared_rstick_down.svg"]{
-    content: var(--ICPRightStickDownButtonImage);
+    content: var(--ICPRightStickDownButtonImage, url("/steaminputglyphs/shared_rstick_down.svg"));
 }
 img[src="/steaminputglyphs/shared_rstick_left.svg"]{
-    content: var(--ICPRightStickLeftButtonImage);
+    content: var(--ICPRightStickLeftButtonImage, url("/steaminputglyphs/shared_rstick_left.svg"));
 }
 img[src="/steaminputglyphs/shared_rstick_right.svg"]{
-    content: var(--ICPRightStickRightButtonImage);
+    content: var(--ICPRightStickRightButtonImage, url("/steaminputglyphs/shared_rstick_right.svg"));
 }
 
 img[src="/steaminputglyphs/shared_lstick.svg"]{
-    content: var(--ICPLeftStickNoDirectionButtonImage);
+    content: var(--ICPLeftStickNoDirectionButtonImage, url("/steaminputglyphs/shared_lstick.svg"));
 }
 img[src="/steaminputglyphs/shared_lstick_up.svg"]{
-    content: var(--ICPLeftStickUpButtonImage);
+    content: var(--ICPLeftStickUpButtonImage, url("/steaminputglyphs/shared_lstick_up.svg"));
 }
 img[src="/steaminputglyphs/shared_lstick_down.svg"]{
-    content: var(--ICPLeftStickDownButtonImage);
+    content: var(--ICPLeftStickDownButtonImage, url("/steaminputglyphs/shared_lstick_down.svg"));
 }
 img[src="/steaminputglyphs/shared_lstick_left.svg"]{
-    content: var(--ICPLeftStickLeftButtonImage);
+    content: var(--ICPLeftStickLeftButtonImage, url("/steaminputglyphs/shared_lstick_left.svg"));
 }
 img[src="/steaminputglyphs/shared_lstick_right.svg"]{
-    content: var(--ICPLeftStickRightButtonImage);
+    content: var(--ICPLeftStickRightButtonImage, url("/steaminputglyphs/shared_lstick_right.svg"));
 }
 
 
 /* Steam Control Glyphs*/
 img[src="/steaminputglyphs/shared_gyro.svg"]{
-    content: var(--ICPGyroButtonImage);
+    content: var(--ICPGyroButtonImage, url("/steaminputglyphs/shared_gyro.svg"));
 }
 img[src="/steaminputglyphs/sd_r2_half.svg"]{
-    content: var(--ICPR2SoftPullButtonImage);
+    content: var(--ICPR2SoftPullButtonImage, url("/steaminputglyphs/sd_r2_half.svg"));
 }
 
 img[src="/steaminputglyphs/sd_l2_half.svg"]{
-    content: var(--ICPL2SoftPullButtonImage);
+    content: var(--ICPL2SoftPullButtonImage, url("/steaminputglyphs/sd_l2_half.svg"));
 }
 
 img[src="/steaminputglyphs/shared_rstick_touch.svg"]{
-    content: var(--ICPR3TouchButtonImage);
+    content: var(--ICPR3TouchButtonImage, url("/steaminputglyphs/shared_rstick_touch.svg"));
 }
 
 img[src="/steaminputglyphs/shared_lstick_touch.svg"]{
-    content: var(--ICPL3TouchButtonImage);
+    content: var(--ICPL3TouchButtonImage, url("/steaminputglyphs/shared_lstick_touch.svg"));
 }
 
 /* maybe Add More Trackpad Icons if people ask for them. For now its touch click and dpad*/
 img[src="/steaminputglyphs/sd_ltrackpad_up.svg"]{
-    content: var(--ICPLeftTrackpadUpButtonImage);
+    content: var(--ICPLeftTrackpadUpButtonImage, url("/steaminputglyphs/sd_ltrackpad_up.svg"));
 }
 img[src="/steaminputglyphs/sd_ltrackpad_down.svg"]{
-    content: var(--ICPLeftTrackpadDownButtonImage);
+    content: var(--ICPLeftTrackpadDownButtonImage, url("/steaminputglyphs/sd_ltrackpad_down.svg"));
 }
 img[src="/steaminputglyphs/sd_ltrackpad_left.svg"]{
-    content: var(--ICPLeftTrackpadLeftButtonImage);
+    content: var(--ICPLeftTrackpadLeftButtonImage, url("/steaminputglyphs/sd_ltrackpad_left.svg"));
 }
 img[src="/steaminputglyphs/sd_ltrackpad_right.svg"]{
-    content: var(--ICPLeftTrackpadRightButtonImage);
+    content: var(--ICPLeftTrackpadRightButtonImage, url("/steaminputglyphs/sd_ltrackpad_right.svg"));
 }
 img[src="/steaminputglyphs/sd_ltrackpad_click.svg"]{
-    content: var(--ICPLeftTrackpadClickButtonImage);
+    content: var(--ICPLeftTrackpadClickButtonImage, url("/steaminputglyphs/sd_ltrackpad_click.svg"));
 }
 img[src="/steaminputglyphs/sd_ltrackpad_ring.svg"]{
-    content: var(--ICPLeftTrackpadTouchButtonImage);
+    content: var(--ICPLeftTrackpadTouchButtonImage, url("/steaminputglyphs/sd_ltrackpad_ring.svg"));
 }
 img[src="/steaminputglyphs/sd_ltrackpad_swipe.svg"]{
-    content: var(--ICPLeftTrackpadSwipeButtonImage);
+    content: var(--ICPLeftTrackpadSwipeButtonImage, url("/steaminputglyphs/sd_ltrackpad_swipe.svg"));
 }
 
 img[src="/steaminputglyphs/sd_rtrackpad_up.svg"]{
-    content: var(--ICPRightTrackpadUpButtonImage);
+    content: var(--ICPRightTrackpadUpButtonImage, url("/steaminputglyphs/sd_rtrackpad_up.svg"));
 }
 img[src="/steaminputglyphs/sd_rtrackpad_down.svg"]{
-    content: var(--ICPRightTrackpadDownButtonImage);
+    content: var(--ICPRightTrackpadDownButtonImage, url("/steaminputglyphs/sd_rtrackpad_down.svg"));
 }
 img[src="/steaminputglyphs/sd_rtrackpad_left.svg"]{
-    content: var(--ICPRightTrackpadLeftButtonImage);
+    content: var(--ICPRightTrackpadLeftButtonImage, url("/steaminputglyphs/sd_rtrackpad_left.svg"));
 }
 img[src="/steaminputglyphs/sd_rtrackpad_right.svg"]{
-    content: var(--ICPRightTrackpadRightButtonImage);
+    content: var(--ICPRightTrackpadRightButtonImage, url("/steaminputglyphs/sd_rtrackpad_right.svg"));
 }
 img[src="/steaminputglyphs/sd_rtrackpad_click.svg"]{
-    content: var(--ICPRightTrackpadClickButtonImage);
+    content: var(--ICPRightTrackpadClickButtonImage, url("/steaminputglyphs/sd_rtrackpad_click.svg"));
 }
 img[src="/steaminputglyphs/sd_rtrackpad_ring.svg"]{
-    content: var(--ICPRightTrackpadTouchButtonImage);
+    content: var(--ICPRightTrackpadTouchButtonImage, url("/steaminputglyphs/sd_rtrackpad_ring.svg"));
 }
 img[src="/steaminputglyphs/sd_rtrackpad_swipe.svg"]{
-    content: var(--ICPRightTrackpadSwipeButtonImage);
+    content: var(--ICPRightTrackpadSwipeButtonImage, url("/steaminputglyphs/sd_rtrackpad_swipe.svg"));
 }
 
 /* Back Paddles*/
 
 img[src="/steaminputglyphs/sd_l4.svg"]{
-    content: var(--ICPL4ButtonImage);
+    content: var(--ICPL4ButtonImage, url("/steaminputglyphs/sd_l4.svg"));
 }
 img[src="/steaminputglyphs/sd_l5.svg"]{
-    content: var(--ICPL5ButtonImage);
+    content: var(--ICPL5ButtonImage, url("/steaminputglyphs/sd_l5.svg"));
 }
 
 img[src="/steaminputglyphs/sd_r4.svg"]{
-    content: var(--ICPR4ButtonImage);
+    content: var(--ICPR4ButtonImage, url("/steaminputglyphs/sd_r4.svg"));
 }
 img[src="/steaminputglyphs/sd_r5.svg"]{
-    content: var(--ICPR5ButtonImage);
+    content: var(--ICPR5ButtonImage, url("/steaminputglyphs/sd_r5.svg"));
 }
 
 
@@ -338,63 +338,69 @@ svg[viewBox="0 0 100 36"]{
 
 .quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(1)::before{
     content: "";
-    background-image: var(--QAMNotificationsButtonImage);
-    background-size: 32px 32px;
+    background-image: var(--ICPQAMNotificationsButtonImage);
+    background-size: 24px 24px;
     width: 48px;
     height: 64px;
     background-position: center;
     background-repeat: no-repeat;
     display: var(--ICPQAMCustomCollumnIconsDisplay);
+    filter: var(--ICPQAMMenuSvgColorFilter, none);
 }
 .quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(2)::before{
     content: "";
-    background-image: var(--QAMFriendsButtonImage);
-    background-size: 32px 32px;
+    background-image: var(--ICPQAMFriendsButtonImage);
+    background-size: 24px 24px;
     width: 48px;
     height: 64px;
     background-position: center;
     background-repeat: no-repeat;
     display: var(--ICPQAMCustomCollumnIconsDisplay);
+    filter: var(--ICPQAMMenuSvgColorFilter, none);
 }
 .quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(3)::before{
     content: "";
-    background-image: var(--QAMQuickSettingsButtonImage);
-    background-size: 32px 32px;
+    background-image: var(--ICPQAMQuickSettingsButtonImage);
+    background-size: 24px 24px;
     width: 48px;
     height: 64px;
     background-position: center;
     background-repeat: no-repeat;
     display: var(--ICPQAMCustomCollumnIconsDisplay);
+    filter: var(--ICPQAMMenuSvgColorFilter, none);
 }
 .quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(4)::before{
     content: "";
-    background-image: var(--QAMPerformanceButtonImage);
-    background-size: 32px 32px;
+    background-image: var(--ICPQAMPerformanceButtonImage);
+    background-size: 24px 24px;
     width: 48px;
     height: 64px;
     background-position: center;
     background-repeat: no-repeat;
     display: var(--ICPQAMCustomCollumnIconsDisplay);
+    filter: var(--ICPQAMMenuSvgColorFilter, none);
 }
 .quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(5)::before{
     content: "";
-    background-image: var(--QAMHelpButtonImage);
-    background-size: 32px 32px;
+    background-image: var(--ICPQAMHelpButtonImage);
+    background-size: 24px 24px;
     width: 48px;
     height: 64px;
     background-position: center;
     background-repeat: no-repeat;
     display: var(--ICPQAMCustomCollumnIconsDisplay);
+    filter: var(--ICPQAMMenuSvgColorFilter, none);
 }
 .quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(6)::before{
     content: "";
-    background-image: var(--QAMDeckyButtonImage);
-    background-size: 32px 32px;
+    background-image: var(--ICPQAMDeckyButtonImage);
+    background-size: 24px 24px;
     width: 48px;
     height: 64px;
     background-position: center;
     background-repeat: no-repeat;
     display: var(--ICPQAMCustomCollumnIconsDisplay);
+    filter: var(--ICPQAMMenuSvgColorFilter, none);
 }
 
 

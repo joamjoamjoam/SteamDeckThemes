@@ -1,9 +1,9 @@
 {
-    "name": "ZIcon Packer",
+    "name": "Icon Packer",
     "version": "v1.0",
     "author": "joamjoamjoam",
-    "target": "Lock Screen",
-    "description": "Show Xbox Button icons in UI",
+    "target": "System-Wide",
+    "description": "Set Icons Sytmen Wide using Icon Packs.",
     "manifest_version": 2,
     "inject": {
         "ICPShared.css": [
@@ -12,19 +12,14 @@
     },
     "patches": {
       "Lock Screen Type": {
-        "default": "Stock",
+        "default": "Xbox",
         "type": "dropdown",
         "values":{
-            "Stock": {
-                "Icon Sets/Stock/Icons.css": [
-                  "SP", "QuickAccess", "MainMenu"
-                ]
-              },
-              "Xbox": {
-                "Icon Sets/Xbox Icons/Icons.css": [
-                  "SP", "QuickAccess", "MainMenu"
-                ]
-              }
+            "Xbox": {
+              "Icon Sets/Xbox Icons/Icons.css": [
+                "SP", "QuickAccess", "MainMenu"
+              ]
+            }
         }
       }
     }

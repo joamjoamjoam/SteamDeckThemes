@@ -1,6 +1,8 @@
 
 :root
 {
+    /* Button Icons. If you want to use the default then use the default steamglyph image path or just delete the variable*/
+
     --ICPAButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/a.png");
     --ICPXButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/x.png");
     --ICPYButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/y.png");
@@ -69,10 +71,14 @@
     --ICPGyroButtonImage: url("/steaminputglyphs/shared_gyro.svg");
 
 
-    /* UI Icons i.e. The good stuff*/
-
-
     /* Inline SVG Elements. Select if you  want the Stock Icons or Custom Icons.*/
+
+
+    /* SVG Ekement Filters */
+    --ICPMainMenuSvgColorFilter: none;
+    --ICPQAMMenuSvgColorFilter: none;
+    --ICPHeaderSvgColorFilter: none;
+
 
     /*                            Steam Button Icon                                                                */
 
@@ -89,66 +95,63 @@
     /* Stock Steam Button Icon */
     /* --ICPQAMCSteamButtonDisplay: flex;
     --ICPQAMCCustomSteamButtonDisplay: none; */
-    /************************************************************************************************************/
 
 
     /*                            Quick Access Menu                                                                */
 
     /* If using Custom QAM Menu Icons use this block*/
 
-    /* --ICPQAMCollumnIconsDisplay: none;
+    --ICPQAMCollumnIconsDisplay: none;
     --ICPQAMCustomCollumnIconsDisplay: flex;
-
-    --ICPQAMNotificationsButtonImage: url("");
-    --ICPQAMFriendsButtonImage: url("");
-    --ICPQAMQuickSettingsButtonImage: url("");
-    --ICPQAMPerformanceButtonImage: url("");
-    --ICPQAMHelpButtonImage: url("");
-    --ICPQAMDeckyButtonImage: url(""); */
+    
+    --ICPQAMNotificationsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/notifications.png");
+    --ICPQAMFriendsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/friends.png");
+    --ICPQAMQuickSettingsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/settings.png");
+    --ICPQAMPerformanceButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/performance.png");
+    --ICPQAMHelpButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/help.png");
+    --ICPQAMDeckyButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/deckyMenu.png");
     /************************************************************************************************************/
 
     /* If using Stock QAM Menu Icons use this block*/
-    --ICPQAMCollumnIconsDisplay: flex;
-    --ICPQAMCustomCollumnIconsDisplay: none;
-    /************************************************************************************************************/
+    /* --ICPQAMCollumnIconsDisplay: flex;
+    --ICPQAMCustomCollumnIconsDisplay: none; */
 
 
     /*                            Main Menu                                                                */
 
+
     /* If using Custom Main Menu Icons use this block*/
 
-    /* --ICPMainMenuItemIconsDisplay: none;
-    --ICPMainMenuCustomItemIconsDisplay: flex;
+    --ICPMainMenuItemIconsDisplay: none;
+    --ICPMainMenuCustomItemIconsDisplay: block;
 
-    --ICPMainMenuItemHomeButtonImage: url("");
-    --ICPMainMenuItemLibraryButtonImage: url("");
-    --ICPMainMenuItemStoreButtonImage: url("");
-    --ICPMainMenuItemFriendsButtonImage: url("");
-    --ICPMainMenuItemMediaButtonImage: url("");
-    --ICPMainMenuItemDownloadsButtonImage: url("");
-    --ICPMainMenuItemSettingsButtonImage: url("");
-    --ICPMainMenuItemPowerButtonImage: url(""); */
-   
-
-    /************************************************************************************************************/
+    --ICPMainMenuItemHomeButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/home.png");
+    --ICPMainMenuItemLibraryButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/library.png");
+    --ICPMainMenuItemStoreButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/store.png");
+    --ICPMainMenuItemFriendsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/friends.png");
+    --ICPMainMenuItemMediaButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/media.png");
+    --ICPMainMenuItemDownloadsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/downloads.png");
+    --ICPMainMenuItemSettingsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/settings.png");
+    --ICPMainMenuItemPowerButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/power.png");
 
     /* If using Stock Main Menu Icons use this block*/
-    --ICPMainMenuItemIconsDisplay: flex;
-    --ICPMainMenuCustomItemIconsDisplay: none;
-    /************************************************************************************************************/
+    /* --ICPMainMenuItemIconsDisplay: flex;
+    --ICPMainMenuCustomItemIconsDisplay: none; */
+
 
     /*                            Header Icons                                                                */
     
 
     /* If using Custom Header Icons use this block*/
-    /* --ICPHeaderIconDisplay: none;
+    --ICPHeaderIconDisplay: none;
     --ICPCustomHeaderIconDisplay: block;
     
-    --ICPHeaderSearchBarIconButtonImage: url(""); */
+    --ICPHeaderSearchBarIconButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/search.png");
 
     /* If using Stock Header Icons use this block*/
-    --ICPHeaderIconDisplay: block;
-    --ICPCustomHeaderIconDisplay: none;
+    /* --ICPHeaderIconDisplay: block;
+    --ICPCustomHeaderIconDisplay: none; */
 
-    /************************************************************************************************************/
+
+    /* Cant Theme Wifi or battery Icon for now.*/
 }
