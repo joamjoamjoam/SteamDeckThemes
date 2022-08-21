@@ -21,6 +21,7 @@
 7. (Optional) To test icons locally copy the Enite Icon Packer folder to /home/deck/homebrew/themes folder and reload themes using the CSSLoader Plugin UI.
  
  ### Icon Pack Folder Structure
+ ```bash
 ├── Icon Sets
 │   └── Theme Name
 │       ├── icons (folder containing your icons)
@@ -29,6 +30,7 @@
 │       └── README.md (README to show images/describe icon pack. Can use the root /images directory to hold the images. Credit All Images if needed.)
 ├── ICPShared.css
 └── theme.json (Add your theme to the dropdown box. Optionally add your name to the Authors field)
+```
 
 ## Submission
 - Feel free top submit PRs for your Icon Packs and Ill update the theme on the CSS Loader Store to include it.
