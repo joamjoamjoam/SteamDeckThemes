@@ -2,9 +2,9 @@
 
 ### Themes the Steam UI to use Xbox Icons
 
-[Controller Config](/images/Icon%20Packer/Xbox/controllerConfigMenu.jpg)
-[Main Menu](/images/Icon%20Packer/Xbox/MainMenu.jpg)
-[Quick Access Menu](/images/Icon%20Packer/Xbox/QAM.jpg)
+![Controller Config](/images/Icon%20Packer/Xbox/controllerConfigMenu.jpg)
+![Main Menu](/images/Icon%20Packer/Xbox/MainMenu.jpg)
+![Quick Access Menu](/images/Icon%20Packer/Xbox/QAM.jpg)
 
 
 ## Credits
