@@ -1,0 +1,515 @@
+
+/* Steam UI Replacements*/
+
+img[src="/steaminputglyphs/shared_button_a.svg"]{
+    content: var(--ICPAButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_button_b.svg"]{
+    content: var(--ICPBButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_button_x.svg"]{
+    content: var(--ICPXButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_button_y.svg"]{
+    content: var(--ICPYButtonImage);
+}
+
+img[src="/steaminputglyphs/sd_button_menu.svg"]{
+    content: var(--ICPMenuButtonImage);
+}
+
+img[src="/steaminputglyphs/sd_button_view.svg"]{
+    content: var(--ICPViewButtonImage);
+}
+
+img[src="/steaminputglyphs/sd_l1.svg"]{
+    content: var(--ICPL1ButtonImage);
+}
+
+img[src="/steaminputglyphs/sd_l2.svg"]{
+    content: var(--ICPL2ButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_l3.svg"]{
+    content: var(--ICPL3ButtonImage);
+}
+
+img[src="/steaminputglyphs/sd_r1.svg"]{
+    content: var(--ICPR1ButtonImage);
+}
+img[src="/steaminputglyphs/sd_r2.svg"]{
+    content: var(--ICPR2ButtonImage);
+}
+img[src="/steaminputglyphs/shared_r3.svg"]{
+    content: var(--ICPR3ButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_dpad.svg"]{
+    content: var(--ICPDpadNoDirectionButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_dpad_up.svg"]{
+    content: var(--ICPDpadUpButtonImage);
+}
+img[src="/steaminputglyphs/shared_dpad_right.svg"]{
+    content: var(--ICPDpadRightButtonImage);
+}
+img[src="/steaminputglyphs/shared_dpad_left.svg"]{
+    content: var(--ICPDpadLeftButtonImage);
+}
+img[src="/steaminputglyphs/shared_dpad_down.svg"]{
+    content: var(--ICPDpadDownButtonImage);
+}
+
+
+img[src="/steaminputglyphs/shared_rstick.svg"]{
+    content: var(--ICPRightStickNoDirectionButtonImage);
+}
+img[src="/steaminputglyphs/shared_rstick_up.svg"]{
+    content: var(--ICPRightStickUpButtonImage);
+}
+img[src="/steaminputglyphs/shared_rstick_down.svg"]{
+    content: var(--ICPRightStickDownButtonImage);
+}
+img[src="/steaminputglyphs/shared_rstick_left.svg"]{
+    content: var(--ICPRightStickLeftButtonImage);
+}
+img[src="/steaminputglyphs/shared_rstick_right.svg"]{
+    content: var(--ICPRightStickRightButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_lstick.svg"]{
+    content: var(--ICPLeftStickNoDirectionButtonImage);
+}
+img[src="/steaminputglyphs/shared_lstick_up.svg"]{
+    content: var(--ICPLeftStickUpButtonImage);
+}
+img[src="/steaminputglyphs/shared_lstick_down.svg"]{
+    content: var(--ICPLeftStickDownButtonImage);
+}
+img[src="/steaminputglyphs/shared_lstick_left.svg"]{
+    content: var(--ICPLeftStickLeftButtonImage);
+}
+img[src="/steaminputglyphs/shared_lstick_right.svg"]{
+    content: var(--ICPLeftStickRightButtonImage);
+}
+
+
+/* Steam Control Glyphs*/
+img[src="/steaminputglyphs/shared_gyro.svg"]{
+    content: var(--ICPGyroButtonImage);
+}
+img[src="/steaminputglyphs/sd_r2_half.svg"]{
+    content: var(--ICPR2SoftPullButtonImage);
+}
+
+img[src="/steaminputglyphs/sd_l2_half.svg"]{
+    content: var(--ICPL2SoftPullButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_rstick_touch.svg"]{
+    content: var(--ICPR3TouchButtonImage);
+}
+
+img[src="/steaminputglyphs/shared_lstick_touch.svg"]{
+    content: var(--ICPL3TouchButtonImage);
+}
+
+/* maybe Add More Trackpad Icons if people ask for them. For now its touch click and dpad*/
+img[src="/steaminputglyphs/sd_ltrackpad_up.svg"]{
+    content: var(--ICPLeftTrackpadUpButtonImage);
+}
+img[src="/steaminputglyphs/sd_ltrackpad_down.svg"]{
+    content: var(--ICPLeftTrackpadDownButtonImage);
+}
+img[src="/steaminputglyphs/sd_ltrackpad_left.svg"]{
+    content: var(--ICPLeftTrackpadLeftButtonImage);
+}
+img[src="/steaminputglyphs/sd_ltrackpad_right.svg"]{
+    content: var(--ICPLeftTrackpadRightButtonImage);
+}
+img[src="/steaminputglyphs/sd_ltrackpad_click.svg"]{
+    content: var(--ICPLeftTrackpadClickButtonImage);
+}
+img[src="/steaminputglyphs/sd_ltrackpad_ring.svg"]{
+    content: var(--ICPLeftTrackpadTouchButtonImage);
+}
+img[src="/steaminputglyphs/sd_ltrackpad_swipe.svg"]{
+    content: var(--ICPLeftTrackpadSwipeButtonImage);
+}
+
+img[src="/steaminputglyphs/sd_rtrackpad_up.svg"]{
+    content: var(--ICPRightTrackpadUpButtonImage);
+}
+img[src="/steaminputglyphs/sd_rtrackpad_down.svg"]{
+    content: var(--ICPRightTrackpadDownButtonImage);
+}
+img[src="/steaminputglyphs/sd_rtrackpad_left.svg"]{
+    content: var(--ICPRightTrackpadLeftButtonImage);
+}
+img[src="/steaminputglyphs/sd_rtrackpad_right.svg"]{
+    content: var(--ICPRightTrackpadRightButtonImage);
+}
+img[src="/steaminputglyphs/sd_rtrackpad_click.svg"]{
+    content: var(--ICPRightTrackpadClickButtonImage);
+}
+img[src="/steaminputglyphs/sd_rtrackpad_ring.svg"]{
+    content: var(--ICPRightTrackpadTouchButtonImage);
+}
+img[src="/steaminputglyphs/sd_rtrackpad_swipe.svg"]{
+    content: var(--ICPRightTrackpadSwipeButtonImage);
+}
+
+/* Back Paddles*/
+
+img[src="/steaminputglyphs/sd_l4.svg"]{
+    content: var(--ICPL4ButtonImage);
+}
+img[src="/steaminputglyphs/sd_l5.svg"]{
+    content: var(--ICPL5ButtonImage);
+}
+
+img[src="/steaminputglyphs/sd_r4.svg"]{
+    content: var(--ICPR4ButtonImage);
+}
+img[src="/steaminputglyphs/sd_r5.svg"]{
+    content: var(--ICPR5ButtonImage);
+}
+
+
+/*Lock Screen Icons*/
+
+/* 1 - Dpad Up*/
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(1) > svg{
+    display: none;
+}
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(1)::after {
+    content: "";
+    background-image: var(--ICPDpadUpButtonImage);
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+}
+
+/* 2 - Dpad Left*/
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(2) > svg{
+    display: none;
+}
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(2)::after {
+    content: "";
+    background-image: var(--ICPDpadLeftButtonImage);
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+}
+
+/* 3 - Dpad Down*/
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(3) > svg{
+    display: none;
+}
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(3)::after {
+    content: "";
+    background-image: var(--ICPDpadDownButtonImage);
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+}
+
+/* 4 - Dpad Down*/
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(4) > svg{
+    display: none;
+}
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(4)::after {
+    content: "";
+    background-image: var(--ICPDpadRightButtonImage);
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+}
+
+/* 5 - L2*/
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(5) > svg{
+    display: none;
+}
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(5)::after {
+    content: "";
+    background-image: var(--ICPL2ButtonImage);
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+}
+
+/* 6 - R2*/
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(6) > svg{
+    display: none;
+}
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(6)::after {
+    content: "";
+    background-image: var(--ICPR2ButtonImage);
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+}
+
+/* 7 - L1*/
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(7) > svg{
+    display: none;
+}
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(7)::after {
+    content: "";
+    background-image: var(--ICPL1ButtonImage);
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+}
+
+/* 8 - R1*/
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(8) > svg{
+    display: none;
+}
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(8)::after {
+    content: "";
+    background-image: var(--ICPR1ButtonImage);
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+}
+
+
+/* 9 - Y*/
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(9) > svg{
+    display: none;
+}
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(9)::after {
+    content: "";
+    background-image: var(--ICPYButtonImage);
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+}
+
+/* 0 - X*/
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(10) > svg{
+    display: none;
+}
+.lockscreen_NumericButtonOption_2c4Hz:nth-of-type(10)::after {
+    content: "";
+    background-image: var(--ICPXButtonImage);
+    background-size: 22px 22px;
+    width: 22px;
+    height: 22px;
+}
+
+
+/************************************************** SVG Types *******************************************************************/
+
+
+
+/* Steam UI Button */
+
+svg[viewBox="0 0 100 36"]{
+    display: var(--ICPQAMSteamButtonDisplay);
+}
+.footer_BasicFooter_3T1iF .footer_FooterLegend_2JJDH .footer_Item_wesFG:nth-of-type(1) .actionbuttonlegenditem_ActionButtonLegend_Mbyhb::before {
+    content: "";
+    background-image: var(--ICPSteamButtonImage);
+    background-size: 61px 22px;
+    width: 61px;
+    height: 22px;
+    display: var(--ICPQAMCustomSteamButtonDisplay);
+}
+.controllerconfiguratorsummary_InputGlyph_3Fz8o.controllerconfiguratorsummary_ChordControlBinding_2-B4w::before {
+    content: "";
+    background-image: var(--ICPSteamButtonImage);
+    background-size: 44px 16px;
+    width: 44px;
+    height: 16px;
+    display: var(--ICPQAMCustomSteamButtonDisplay);
+}
+
+/* Quick Access Menu Icons */
+.quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C > svg{
+    display: var(--ICPQAMCollumnIconsDisplay);
+}
+
+
+.quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(1)::before{
+    content: "";
+    background-image: var(--QAMNotificationsButtonImage);
+    background-size: 32px 32px;
+    width: 48px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPQAMCustomCollumnIconsDisplay);
+}
+.quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(2)::before{
+    content: "";
+    background-image: var(--QAMFriendsButtonImage);
+    background-size: 32px 32px;
+    width: 48px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPQAMCustomCollumnIconsDisplay);
+}
+.quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(3)::before{
+    content: "";
+    background-image: var(--QAMQuickSettingsButtonImage);
+    background-size: 32px 32px;
+    width: 48px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPQAMCustomCollumnIconsDisplay);
+}
+.quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(4)::before{
+    content: "";
+    background-image: var(--QAMPerformanceButtonImage);
+    background-size: 32px 32px;
+    width: 48px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPQAMCustomCollumnIconsDisplay);
+}
+.quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(5)::before{
+    content: "";
+    background-image: var(--QAMHelpButtonImage);
+    background-size: 32px 32px;
+    width: 48px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPQAMCustomCollumnIconsDisplay);
+}
+.quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C:nth-of-type(6)::before{
+    content: "";
+    background-image: var(--QAMDeckyButtonImage);
+    background-size: 32px 32px;
+    width: 48px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPQAMCustomCollumnIconsDisplay);
+}
+
+
+
+/* Main Menu SVG Icons*/
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8 .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z > svg{
+    display: var(--ICPMainMenuItemIconsDisplay);
+}
+
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8:nth-of-type(1) .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z::before{
+    content: "";
+    background-image: var(--ICPMainMenuItemHomeButtonImage);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPMainMenuCustomItemIconsDisplay);
+}
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8:nth-of-type(2) .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z::before{
+    content: "";
+    background-image: var(--ICPMainMenuItemLibraryButtonImage);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPMainMenuCustomItemIconsDisplay);
+}
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8:nth-of-type(3) .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z::before{
+    content: "";
+    background-image: var(--ICPMainMenuItemStoreButtonImage);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPMainMenuCustomItemIconsDisplay);
+}
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8:nth-of-type(4) .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z::before{
+    content: "";
+    background-image: var(--ICPMainMenuItemFriendsButtonImage);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPMainMenuCustomItemIconsDisplay);
+}
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8:nth-of-type(5) .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z::before{
+    content: "";
+    background-image: var(--ICPMainMenuItemMediaButtonImage);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPMainMenuCustomItemIconsDisplay);
+}
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8:nth-of-type(6) .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z::before{
+    content: "";
+    background-image: var(--ICPMainMenuItemDownloadsButtonImage);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPMainMenuCustomItemIconsDisplay);
+}
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8:nth-of-type(7) .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z::before{
+    content: "";
+    background-image: var(--ICPMainMenuItemSettingsButtonImage);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPMainMenuCustomItemIconsDisplay);
+}
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8:nth-of-type(8) .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z::before{
+    content: "";
+    background-image: var(--ICPMainMenuItemPowerButtonImage);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPMainMenuCustomItemIconsDisplay);
+}
+
+
+/* Header Icons */
+
+
+.searchbar_SearchIconRight_1Ka4T{
+    display: var(--ICPHeaderIconDisplay);
+}
+
+.searchbar_SearchContainer_161Tj::after{
+    content: "";
+    background-image: var(--ICPHeaderSearchBarIconButtonImage);
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: var(--ICPCustomHeaderIconDisplay);
+}
+

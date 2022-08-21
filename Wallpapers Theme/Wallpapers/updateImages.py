@@ -21,6 +21,7 @@ def log(message):
     #print(message)
     pass
 
+
 def getB64ForFile(file):
     rv = ""
     try:
@@ -100,6 +101,7 @@ def main():
     jsonTemplate = open("themeTemplate.json")
     themeJson = json.load(jsonTemplate)
     jsonTemplate.close()
+
     # Create Folder Structure
     os.mkdir(cssDir)
     os.mkdir(f"{cssDir}/{b64Dir}")
@@ -118,7 +120,6 @@ def main():
                     writeCSSType(fallbackCSSDir, "", v['css_variable'])
                 if "default" in v.keys() and "None" != v["default"]:
                     v["default"] = "None"
-
             else:
                 raise ValueError(f'Invalid css variable name')
 

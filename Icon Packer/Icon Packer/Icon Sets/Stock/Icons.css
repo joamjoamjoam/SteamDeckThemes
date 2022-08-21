@@ -1,0 +1,17 @@
+
+:root
+{
+    --ICPAButtonImage: url();;
+    --ICPXButtonImage: url();
+    --ICPYButtonImage: url();
+    --ICPBButtonImage: url();
+    --ICPMenuButtonImage: url();
+    --ICPDpadUpButtonImage: url();
+    --ICPDpadLeftButtonImage: url();
+    --ICPDpadDownButtonImage: url();
+    --ICPDpadRightButtonImage: url();
+    --ICPL2ButtonImage: url();
+    --ICPR2ButtonImage: url();
+    --ICPL1ButtonImage: url();
+    --ICPR1ButtonImage: url();
+}

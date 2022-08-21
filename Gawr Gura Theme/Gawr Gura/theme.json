@@ -13,6 +13,16 @@
         ] 
     },
     "patches": {
+        "Clean Game View": {
+            "default": "Yes",
+            "type": "checkbox",
+            "values":{
+                "No": {},
+                "Yes": {
+                    "cleanGameView/shared.css": [ "SP" ]
+                }
+            }
+        },
         "Switch Like Home": {
             "default": "Yes Without Friends",
             "type": "dropdown",
@@ -23,16 +33,6 @@
                 },
                 "Yes Without Friends": {
                     "nofriends.css": [ "SP" ]
-                }
-            }
-        },
-        "Clean Game View": {
-            "default": "Yes",
-            "type": "checkbox",
-            "values":{
-                "No": {},
-                "Yes": {
-                    "cleanGameView/shared.css": [ "SP" ]
                 }
             }
         },
