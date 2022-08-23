@@ -9,10 +9,7 @@
             "SP", "QuickAccess", "MainMenu"
         ],
         "Components/sideMenus.css": [
-            "QuickAccess", "MainMenu"
-        ],
-        "Components/lockscreen.css": [
-            "SP"
+            "QuickAccess", "MainMenu", "SP"
         ],
         "Components/homeScreen.css": [
             "SP"

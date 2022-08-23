@@ -306,8 +306,9 @@ button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_But
     color: var(--textColor) !important;
   }
 
-  .mainmenu_ActiveDot_1uLVH{
-    color: var(--GGAccent);
+
+  div .mainmenu_Item_2w9Tp .mainmenu_ActiveDot_1uLVH {
+    background-color: var(--GGAccent);
   }
 
   .marquee_Content_2ADpT{

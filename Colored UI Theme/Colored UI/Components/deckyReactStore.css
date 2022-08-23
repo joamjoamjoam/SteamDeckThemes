@@ -1,23 +1,22 @@
-:root{
-    --CUIDeckyStoreCardBackgroundColor: blue;
-    --CUIDeckyStoreCardForegroundColor: white;
-    --CUIDeckyStoreButtonBackgroundColor: blue;
-    --CUIDeckyStoreButtonForegroundColor: white;
-}
 
 .deckyStoreCard{
-    background-color: var(--CUIDeckyStoreCardBackgroundColor);
+    background-color: var(--CUIBackgroundDark);
 }
 
 .deckyStoreCard .deckyStoreCardHeader .quickaccessmenu_Text_2B2VB{
-    color: var(--CUIDeckyStoreCardForegroundColor)
+    color: var(--CUIFontColor)
 }
 
 .deckyStoreCardInfo{
-    color: var(--CUIDeckyStoreCardForegroundColor)
+    color: var(--CUIFontColor)
 }
 
 div.deckyStoreCardVersionDropdownContainer > button, div.deckyStoreCardInstallButtonContainer > button{
     background-color: var(--CUIDeckyStoreButtonBackgroundColor) !important;
-    color: var(--CUIDeckyStoreButtonForegroundColor) !important;
+    color: var(--CUIFontColor) !important;
+}
+
+div.deckyStoreCardVersionDropdownContainer > button.gpfocuswithin, div.deckyStoreCardInstallButtonContainer > button.gpfocuswithin{
+    background-color: var(--CUIBackgroundRegular) !important;
+    color: var(--CUIFontColor) !important;
 }

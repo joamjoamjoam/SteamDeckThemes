@@ -1,12 +1,3 @@
-/*Steam and QAM menus*/
-:root {
-  --CUIBackgroundLight: #2a62d1 !important; /* base */
-  --CUIBackgroundRegular: #2a62d1 !important; /* Surface */
-  --CUIBackgroundDark: #11036e !important; /* Overlay */
-  --CUIBorderLight: #c4c3ca !important; /* Higlight High */
-  --CUIBorderDark: #070342 !important; /* Highlight Low */
-  --CUIAccent: #ebdf75 !important; /* Pine */
-}
 /* Quick Access */
 
 .gamepaddialog_ModalPosition_30VHl > .gamepaddialog_GamepadDialogContent_3joNk {
@@ -16,17 +7,20 @@
   }
   .quickaccessmenu_QuickAccessMenu_V0cr- {
     background: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor);
   }
   .quickaccessmenu_Tab_1S76C {
     background-color: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor);
   }
   .quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu {
     background-color: var(--CUIBackgroundLight) !important;
-    color: #fff;
+    color: var(--CUIFontColor);
   }
   .gpfocus .quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu,
   .quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu.gpfocus {
     background: var(--CUIBackgroundLight) !important;
+    color: var(--CUIFontColor);
   }
   @keyframes quickaccessmenu_ItemFocusAnim-darkerGrey-nocolor_2YeD3 {
     from {
@@ -47,42 +41,44 @@
   }
   .GamepadMode.friendlist {
     background: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor);
   }
   .GamepadMode.friendlist .FriendsListSteamDeckTabs {
     background-color: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor);
   }
   .GamepadMode.friendlist .FriendsListTab.Active {
-    color: #fff !important;
+    color: var(--CUIFontColor) !important;
   }
   .GamepadMode.friendlist .FriendsListTab {
     color: #969696 !important;
   }
   .friendslist_TabBumper_24KhQ.GamepadMode svg path:first-of-type,
   .GamepadMode .friendslist_TabBumper_24KhQ svg path:first-of-type {
-    stroke: #fff;
+    stroke: var(--CUIFontColor);
   }
   .friendslist_TabBumper_24KhQ.GamepadMode svg path,
   .GamepadMode .friendslist_TabBumper_24KhQ svg path {
-    fill: #fff !important;
+    fill: var(--CUIFontColor);
   }
 
   .friendStatusHover.gpfocuswithin {
-    background: var(--CUIBackgroundLight) !important;
-    color: var(--textColor) !important;
+    background: var(--CUIBackgroundLight);
+    color: var(--CUIFontColor) ;
   }
 
   .groupHeaderContainer.Panel.Focusable.gpfocuswithin {
     background: var(--CUIBackgroundLight) !important;
-    color: var(--textColor) !important;
+    color: var(--CUIFontColor) !important;
 }
 
 .SortByRecent.Panel.Focusable{
     background: var(--CUIBackgroundLight) !important;
-    color: var(--textColor) !important;
+    color: var(--CUIFontColor) !important;
 }
 
 .SVGIcon_Button.SVGIcon_SortBy{
-    stroke: var(--textColor);
+    stroke: var(--CUIFontColor);
 }
 
 .quickaccessmenu_Menu_1gJzx.Panel.Focusable.gpfocuswithin button.DialogButton.gamepaddialog_Button_1kn70, button.DialogButton.gamepaddropdown_DropDownControlButton_28bny {
@@ -93,7 +89,7 @@
 }
 
 button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:active, button.gamepaddialog_Button_1kn70.DialogButton:enabled.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active, button.gamepaddialog_Button_1kn70.DialogButton:active.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:active:active, button.gamepaddialog_Button_1kn70.DialogButton:hover.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:hover:active, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover.gpfocus, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover:active{
-  color: var(--textColor);
+  color: var(--CUIFontColor);
   background-color: var(--CUIBackgroundDark);
 
 }
@@ -143,6 +139,7 @@ button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_But
     ) !important;
   }
   */
+
   /* Settings */
   
   .gamepaddialog_ModalPosition_30VHl > .gamepaddialog_GamepadDialogContent_3joNk {
@@ -152,25 +149,53 @@ button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_But
   }
   .BasicUI .librarysettings_LibrarySettings_2nsOY {
     background: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor) !important;
   }
+  .gamepadtabbedpage_TabCount_1ui4I{
+    color: var(--CUIAccent) !important;
+  }
+
+  .gamepadpagedsettings_PageListItem_Title_2PPLv{
+    color: var(--CUIFontColor) !important;
+  }
+
   .gamepadpagedsettings_PagedSettingDialog_ContentColumn_3JPle {
     background: var(--CUIBackgroundDark) !important;
-    background-color: rgb(38, 35, 58) !important;
+    color: var(--CUIFontColor) !important;
   }
+
   .gamepadpagedsettings_PagedSettingsDialog_PageListColumn_2EZ3o {
-    background: var(--CUIBackgroundLight) !important;
-    background-color: rgb(25, 23, 36) !important;
+    background: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor) !important;
   }
   .gamepadpagedsettings_PagedSettingsDialog_PageListColumn_1d6VI {
-    background: var(--CUIBackgroundRegular) !important;
+    background: var(--CUIBackgroundDark) !important;
     border-color: var(--CUIBorderLight) var(--CUIBorderDark) var(--CUIBorderDark)
       var(--CUIBorderLight);
   }
-  .gamepadpagedsettings_PagedSettingsDialog_PageListItem_2mL2H:focus {
+
+  .gamepadpagedsettings_PagedSettingsDialog_PageListItem_2mL2H{
+    background: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor) !important;
+  }
+
+  .gamepadpagedsettings_PagedSettingsDialog_PageListItem_2mL2H:focus, .gamepadpagedsettings_PagedSettingsDialog_PageListItem_2mL2H.gpfocus.gpfocuswithin {
     background-color: var(--CUIBackgroundLight) !important;
     border-color: var(--CUIBorderLight) var(--CUIBorderDark) var(--CUIBorderDark)
       var(--CUIBorderLight) !important;
+      color: var(--CUIFontColor) !important;
   }
+
+  .gamepadpagedsettings_PagedSettingsDialog_PageListItem_1ix7r{
+    color: var(--CUIFontColor) !important;
+  }
+  .gamepadpagedsettings_PagedSettingsDialog_PageListItem_1ix7r:focus, .gamepadpagedsettings_PagedSettingsDialog_PageListItem_1ix7r.gpfocus.gpfocuswithin {
+    background-color: var(--CUIBackgroundLight) !important;
+    border-color: var(--CUIBorderLight) var(--CUIBorderDark) var(--CUIBorderDark)
+      var(--CUIBorderLight) !important;
+      color: var(--CUIFontColor) !important;
+  }
+
   .gamepadpagedsettings_PagedSettingsDialog_PageListItem_2mL2H.gamepadpagedsettings_Active_1ELdD {
     background: var(--CUIBackgroundLight) !important;
     border-color: var(--CUIBorderLight) var(--CUIBorderDark) var(--CUIBorderDark)
@@ -185,20 +210,25 @@ button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_But
     --left-track-color: var(--CUIAccent) !important;
   }
   .gamepaddialog_ToCUIleRail_2bl0i::before {
-    background: var(--CUIAccent) !important;
+    background: var(--CUIBackgroundDark) !important;
   }
   .gamepaddialog_Toggle_9Ql-o.gpfocus:after {
     background-color: transparent;
+  }
+
+  .gamepadtabbedpage_Selected_3Gp1b {
+    background-color: var(--CUIBackgroundLight);
   }
 
 
   .gamepaddialog_Field_eKmEX.gamepaddialog_HighlightOnFocus_2HFrm.gpfocus,
   .gamepaddialog_Field_eKmEX.gamepaddialog_HighlightOnFocus_2HFrm.gpfocuswithin {
     background: var(--CUIBackgroundLight) !important;
+    color: var(--CUIFontColor) !important;
   }
 
   .basiccontextmenu_contextMenuItem_3PqLg {
-    color: var(--CUIAccent);
+    color: var(--CUIAccent) !important;
     border-color: var(--CUIBorderLight) var(--CUIBorderDark) var(--CUIBorderDark)
       var(--CUIBorderLight);
     background: var(--CUIBackgroundRegular);
@@ -206,21 +236,24 @@ button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_But
   .basiccontextmenu_contextMenuItem_3PqLg.basiccontextmenu_Focused_3t3Zg {
     outline: none;
     background: var(--CUIBackgroundLight);
-    color: #fff;
+    color: var(--CUIFontColor) !important;
   }
   .basiccontextmenu_contextMenuItem_3PqLg.basiccontextmenu_Selected_iWaEr {
     background: var(--CUIBackgroundRegular);
-    color: #fff;
+    color: var(--CUIFontColor) !important;
   }
   .multiChatDialog.GamepadMode,
   .GamepadMode .multiChatDialog {
     background: var(--CUIBackgroundDark);
+    color: var(--CUIFontColor) !important;
   }
   .GamepadMode.friendlist .TabPanelHeader {
     background-color: var(--CUIBackgroundDark);
+    color: var(--CUIFontColor) !important;
   }
   .favoriteElement.gpfocuswithin {
     background-color: var(--CUIBackgroundLight);
+    color: var(--CUIFontColor) !important;
   }
   .gamepadslider_SliderNotchTick_u8QEa.gamepadslider_TickActive_j418S {
     background-color: var(--CUIAccent);
@@ -263,18 +296,22 @@ button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_But
   
   .BasicUI .appdetailsprimarylinkssection_Anchor_DY4_w {
     background-color: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor) !important;
   }
   
   .controllerconfiguratorsummary_ControllerConfiguratorSummary_3TvBV {
     background: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor) !important;
   }
   
   .controllerconfigurator_interstitial_ConfiguratorInterstitialContainer_3FS5u {
     background-color: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor) !important;
   }
   
   .controllerconfigurator_TopSection_20sN9 {
     background-color: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor) !important;
   }
   
   .controllerconfigurator_BottomSection_3RsRf {
@@ -284,10 +321,11 @@ button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_But
   .gamepadslider_EditableValue_3aMli,
   .gamepadslider_FakeEditableValue_1iWWS {
     background: var(--CUIBackgroundDark) !important;
+    color: var(--CUIFontColor) !important;
   }
   
   .footericons_Background_yjs9m {
-    fill: #fff !important;
+    fill: var(--CUIFontColor) !important;
   }
 
   .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocus, .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocuswithin{
@@ -298,18 +336,38 @@ button.gamepaddialog_Button_1kn70.DialogButton.gpfocus, button.gamepaddialog_But
 
   .mainmenu_Menu_23IDi.mainmenu_Open_3apLK.Panel.Focusable.gpfocuswithin{
     background-color: var(--CUIBackgroundDark);
-    color: var(--textColor);
+    color: var(--CUIFontColor) !important;
   }
 
   .mainmenu_Item_2w9Tp.gpfocus.gpfocuswithin{
     background: var(--CUIBackgroundLight) !important;
-    color: var(--textColor) !important;
+    color: var(--CUIFontColor) !important;
   }
 
-  .mainmenu_ActiveDot_1uLVH{
-    color: var(--CUIAccent);
+  div .mainmenu_Item_2w9Tp .mainmenu_ActiveDot_1uLVH {
+    background-color: var(--CUIAccent) !important;
   }
 
   .marquee_Content_2ADpT{
-    color: var(--textColor);
+    color: var(--CUIFontColor) !important;
   }
+
+
+  /* Color Icons Accent Color */
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8 .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z > svg > path{
+  fill:  var(--CUIFontColor) !important;
+}
+
+.mainmenu_Menu_23IDi .mainmenu_ItemOuter_1BbM8 .mainmenu_Item_2w9Tp .mainmenu_ItemIcon_3xZ3Z > svg > svg > path{
+  fill:  var(--CUIFontColor) !important;
+}
+
+.lockscreen_NumericButtonOption_2c4Hz > svg > path {
+  fill: var(--CUIFontColor) !important;
+}
+
+.quickaccessmenu_TabContentColumn_2z5NL .quickaccessmenu_Tab_1S76C > svg > path{
+  fill: var(--CUIFontColor) !important;
+}
+

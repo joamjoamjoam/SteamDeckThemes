@@ -1,11 +1,7 @@
-:root{
-    --CUILibraryBackgroundColor: var(--CUIInjectedColorLibraryBackgroundColor);
-}
-
 /*#0e141bFF*/
 
 /* Library Background */
 .gamepadlibrary_GamepadLibrary_ZBBhe 
 {
-    background: var(--CUILibraryBackgroundColor) !important;
+    background: var(--CUIBackgroundDark) !important;
 }

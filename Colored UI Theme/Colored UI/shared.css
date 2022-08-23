@@ -6,46 +6,47 @@
     --CUIBorderDark: #070342 !important;
     --CUIAccent: #ebdf75 !important; /*CUIAccent Colors*/
 
-    --CUIfontColor: white !important
+    --CUIFontColor: lime !important
 }
 
 .footer_BasicFooter_3T1iF{
-    background: #2a62d1AF;
+    background: var(--CUIBackgroundRegular);
+    color: var(--CUIFontColor) !important;
 }
 
 .friendStatusHover.gpfocuswithin {
     background: var(--CUIBackgroundLight) !important;
-    color: var(--textColor) !important;
+    color: var(--CUIFontColor) !important;
 }
 
 .groupHeaderContainer.Panel.Focusable.gpfocuswithin {
     background: var(--CUIBackgroundLight) !important;
-    color: var(--textColor) !important;
+    color: var(--CUIFontColor) !important;
 }
 
 .SortByRecent.Panel.Focusable{
     background: var(--CUIBackgroundLight) !important;
-    color: var(--textColor) !important;
+    color: var(--CUIFontColor) !important;
 }
 
 .SVGIcon_Button.SVGIcon_SortBy{
-    stroke: var(--textColor);
+    stroke: var(--CUIFontColor);
 }
 .favoriteElement.gpfocuswithin{
     background: var(--CUIBackgroundLight) !important;
+    color: var(--CUIFontColor);
 }
 
 .header_Header_1E_SL::before{
-    background: #2a62d1AF;
-}
-
-.libraryassetimage_Container_1R9r2.gamepadhomerecentgames_RecentGamesBackground_1SRox, .appportrait_PortraitMessage_3gwMk, .basicgamecarousel_CarouselGameLabel_3CKji {
-    display: none !important;
+    background: var(--CUIBackgroundRegular);
+    color: var(--CUIFontColor);
 }
 
 input.searchbar_SearchBox_2a1-s.searchbar_Visible_1bLfc.Focusable::placeholder {
-    color: var(--CUIfontColor);
+    color: var(--CUIFontColor);
 }
+
+/* Pop-up Menus */
 
 
 

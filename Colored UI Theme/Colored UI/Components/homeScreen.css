@@ -1,8 +1,23 @@
-:root{
-    --CUIMainScreenBackgroundColor: var(--CUIInjectedColorMainScreenBackgroundColor);
-}
+
 
 /* main menu Background*/
 .gamepadui_BasicHome_3LYP1.gamepadui_OpaqueBackground_b084m {
-    background: var(--CUIMainScreenBackgroundColor) !important;
+    background: var(--CUIBackgroundDark) !important;
 }
+
+.searchbar_SearchIconRight_1Ka4T > svg > path{
+    fill: var(--CUIFontColor) !important;
+}
+
+.header_WirelessIcon_3alLb > svg > path{
+    fill: var(--CUIFontColor) !important;
+}
+
+.header_Percentage_1_RjA{
+    color: var(--CUIFontColor) !important;
+}
+
+.header_Clock_1HhLU{
+    color: var(--CUIFontColor) !important;
+}
+
