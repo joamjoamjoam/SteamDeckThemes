@@ -1,0 +1,21 @@
+{
+  "name": "Icon Resizer",
+  "author": "joamjoamjoam",
+  "version": "v1.0",
+  "inject": {
+    "shared.css": ["SP"]
+  },
+  "patches":{
+      "Remove Background": {
+        "default": "No",
+        "type": "checkbox",
+        "values":{
+            "Yes" : {
+              "removeBack.css" : [ "SP" ]
+            },
+            "No" : {}
+        }
+      }
+  },
+  "target": "Other"
+}

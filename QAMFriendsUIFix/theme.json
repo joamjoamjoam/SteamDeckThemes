@@ -1,0 +1,11 @@
+{
+  "name": "Fix Friends List",
+  "author": "joamjoamjoam",
+  "version": "v1.0",
+  "inject": {
+    "shared.css": ["SP", "MainMenu", "QuickAccess"]
+  },
+  "patches":{
+  },
+  "target": "Other"
+}
