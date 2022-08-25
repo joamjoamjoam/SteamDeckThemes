@@ -2,6 +2,7 @@
   "name": "Fix Friends List",
   "author": "joamjoamjoam",
   "version": "v1.0",
+  "description" : "Fixes the Friends Menu UI Bug introduced in Steam OS 3.3",
   "inject": {
     "shared.css": ["SP", "MainMenu", "QuickAccess"]
   },
