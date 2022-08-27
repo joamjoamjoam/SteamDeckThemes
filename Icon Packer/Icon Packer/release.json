@@ -42,5 +42,5 @@
         "Icon Sets/Xbox Icons/icons/32px/systemIcons/search.png",
         "Icon Sets/Xbox Icons/icons/32px/systemIcons/settings.png"
     ],
-    "ignore": ["README.MD", "README.md", "Readme.md", "readme.md"]
+    "ignore": ["README.MD", "README.md", "Readme.md", "readme.md", "Icon Sets/Xbox Icons/README.md"]
 }
