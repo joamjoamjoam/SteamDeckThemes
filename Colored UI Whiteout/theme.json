@@ -1,0 +1,10 @@
+{
+  "name": "ZWhiteout",
+  "author": "Oteresk, joamjoamjoam",
+  "version": "v1.0",
+  "target": "System-Wide",
+  "inject": {
+	  "shared.css": ["SP", "MainMenu", "QuickAccess"]
+  }
+  
+}

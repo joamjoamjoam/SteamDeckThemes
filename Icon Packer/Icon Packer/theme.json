@@ -3,8 +3,8 @@
     "version": "v1.0",
     "author": "joamjoamjoam",
     "target": "System-Wide",
-    "description": "Set Icons Sytmen Wide using Icon Packs.",
-    "manifest_version": 2,
+    "description": "Set Icons System Wide using Icon Packs.",
+    "manifest_version": 3,
     "inject": {
         "ICPShared.css": [
           "SP", "QuickAccess", "MainMenu"

@@ -11,7 +11,7 @@
         "type": "checkbox",
         "values":{
             "Yes" : {
-              "removeBack.css" : [ "SP" ]
+              "removeBack.css" : [ "SP", "MainMenu", "QuickAccess" ]
             },
             "No" : {}
         }
