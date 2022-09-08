@@ -4,7 +4,7 @@
     "author": "joamjoamjoam, blax722",
     "target": "Lock Screen",
     "description": "Gives the Lock Screen a minimalist stlye. Best used with Lock Screen Pictoral backgrounds",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "inject": {
         "MLSShared.css": [
             "SP"
@@ -40,263 +40,58 @@
             }
         },
         "Lock Screen Background Color": {
-            "default": "Black",
-            "type": "dropdown",
-            "values":{
-                "Transparent": {},
-                "Aqua": {
-                    "lockScreenBackgroundColors/Aqua.css": [
-                      "SP"
-                    ]
-                  },
-                  "Black": {
-                    "lockScreenBackgroundColors/Black.css": [
-                      "SP"
-                    ]
-                  },
-                  "Blue": {
-                    "lockScreenBackgroundColors/Blue.css": [
-                      "SP"
-                    ]
-                  },
-                  "Fuchsia": {
-                    "lockScreenBackgroundColors/Fuchsia.css": [
-                      "SP"
-                    ]
-                  },
-                  "Gray": {
-                    "lockScreenBackgroundColors/Gray.css": [
-                      "SP"
-                    ]
-                  },
-                  "Green": {
-                    "lockScreenBackgroundColors/Green.css": [
-                      "SP"
-                    ]
-                  },
-                  "Lime": {
-                    "lockScreenBackgroundColors/Lime.css": [
-                      "SP"
-                    ]
-                  },
-                  "Maroon": {
-                    "lockScreenBackgroundColors/Maroon.css": [
-                      "SP"
-                    ]
-                  },
-                  "Navy": {
-                    "lockScreenBackgroundColors/Navy.css": [
-                      "SP"
-                    ]
-                  },
-                  "Olive": {
-                    "lockScreenBackgroundColors/Olive.css": [
-                      "SP"
-                    ]
-                  },
-                  "Purple": {
-                    "lockScreenBackgroundColors/Purple.css": [
-                      "SP"
-                    ]
-                  },
-                  "Red": {
-                    "lockScreenBackgroundColors/Red.css": [
-                      "SP"
-                    ]
-                  },
-                  "Silver": {
-                    "lockScreenBackgroundColors/Silver.css": [
-                      "SP"
-                    ]
-                  },
-                  "Teal": {
-                    "lockScreenBackgroundColors/Teal.css": [
-                      "SP"
-                    ]
-                  },
-                  "White": {
-                    "lockScreenBackgroundColors/White.css": [
-                      "SP"
-                    ]
-                  },
-                  "Yellow": {
-                    "lockScreenBackgroundColors/Yellow.css": [
-                      "SP"
-                    ]
-                  }
-            }
+          "type": "none",
+          "values": {
+              "_": {
+                  "shared.css": ["SP"]
+              }
+          },
+          "components": [
+              {
+                  "name": "Background Color Picker",
+                  "type": "color-picker",
+                  "on": "_",
+                  "default": "#000",
+                  "css_variable": "MLSBackgroundColor",
+                  "tabs": ["SP"]
+              }
+          ]
         },   
         "Lock Screen Font Color": {
-            "default": "White",
-            "type": "dropdown",
-            "values":{
-                "Aqua": {
-                    "lockScreenFontColors/Aqua.css": [
-                      "SP"
-                    ]
-                  },
-                  "Black": {
-                    "lockScreenFontColors/Black.css": [
-                      "SP"
-                    ]
-                  },
-                  "Blue": {
-                    "lockScreenFontColors/Blue.css": [
-                      "SP"
-                    ]
-                  },
-                  "Fuchsia": {
-                    "lockScreenFontColors/Fuchsia.css": [
-                      "SP"
-                    ]
-                  },
-                  "Gray": {
-                    "lockScreenFontColors/Gray.css": [
-                      "SP"
-                    ]
-                  },
-                  "Green": {
-                    "lockScreenFontColors/Green.css": [
-                      "SP"
-                    ]
-                  },
-                  "Lime": {
-                    "lockScreenFontColors/Lime.css": [
-                      "SP"
-                    ]
-                  },
-                  "Maroon": {
-                    "lockScreenFontColors/Maroon.css": [
-                      "SP"
-                    ]
-                  },
-                  "Navy": {
-                    "lockScreenFontColors/Navy.css": [
-                      "SP"
-                    ]
-                  },
-                  "Olive": {
-                    "lockScreenFontColors/Olive.css": [
-                      "SP"
-                    ]
-                  },
-                  "Purple": {
-                    "lockScreenFontColors/Purple.css": [
-                      "SP"
-                    ]
-                  },
-                  "Red": {
-                    "lockScreenFontColors/Red.css": [
-                      "SP"
-                    ]
-                  },
-                  "Silver": {
-                    "lockScreenFontColors/Silver.css": [
-                      "SP"
-                    ]
-                  },
-                  "Teal": {
-                    "lockScreenFontColors/Teal.css": [
-                      "SP"
-                    ]
-                  },
-                  "White": {
-                    "lockScreenFontColors/White.css": [
-                      "SP"
-                    ]
-                  },
-                  "Yellow": {
-                    "lockScreenFontColors/Yellow.css": [
-                      "SP"
-                    ]
-                  }
-            }
+          "type": "none",
+          "values": {
+              "_": {
+                  "shared.css": ["SP"]
+              }
+          },
+          "components": [
+              {
+                  "name": "Lockscreen Font Color Picker",
+                  "type": "color-picker",
+                  "on": "_",
+                  "default": "#fff",
+                  "css_variable": "MLSFontColor",
+                  "tabs": ["SP"]
+              }
+          ]
         },
         "Lock Screen Icon Color": {
-            "default": "White",
-            "type": "dropdown",
-            "values":{
-                "Aqua": {
-                    "lockScreenIconColors/Aqua.css": [
-                      "SP"
-                    ]
-                  },
-                  "Black": {
-                    "lockScreenIconColors/Black.css": [
-                      "SP"
-                    ]
-                  },
-                  "Blue": {
-                    "lockScreenIconColors/Blue.css": [
-                      "SP"
-                    ]
-                  },
-                  "Fuchsia": {
-                    "lockScreenIconColors/Fuchsia.css": [
-                      "SP"
-                    ]
-                  },
-                  "Gray": {
-                    "lockScreenIconColors/Gray.css": [
-                      "SP"
-                    ]
-                  },
-                  "Green": {
-                    "lockScreenIconColors/Green.css": [
-                      "SP"
-                    ]
-                  },
-                  "Lime": {
-                    "lockScreenIconColors/Lime.css": [
-                      "SP"
-                    ]
-                  },
-                  "Maroon": {
-                    "lockScreenIconColors/Maroon.css": [
-                      "SP"
-                    ]
-                  },
-                  "Navy": {
-                    "lockScreenIconColors/Navy.css": [
-                      "SP"
-                    ]
-                  },
-                  "Olive": {
-                    "lockScreenIconColors/Olive.css": [
-                      "SP"
-                    ]
-                  },
-                  "Purple": {
-                    "lockScreenIconColors/Purple.css": [
-                      "SP"
-                    ]
-                  },
-                  "Red": {
-                    "lockScreenIconColors/Red.css": [
-                      "SP"
-                    ]
-                  },
-                  "Silver": {
-                    "lockScreenIconColors/Silver.css": [
-                      "SP"
-                    ]
-                  },
-                  "Teal": {
-                    "lockScreenIconColors/Teal.css": [
-                      "SP"
-                    ]
-                  },
-                  "White": {
-                    "lockScreenIconColors/White.css": [
-                      "SP"
-                    ]
-                  },
-                  "Yellow": {
-                    "lockScreenIconColors/Yellow.css": [
-                      "SP"
-                    ]
-                  }
-            }
+          "type": "none",
+          "values": {
+              "_": {
+                  "shared.css": ["SP"]
+              }
+          },
+          "components": [
+              {
+                  "name": "Lockscreen Icon Color Picker",
+                  "type": "color-picker",
+                  "on": "_",
+                  "default": "#fff",
+                  "css_variable": "MLSButtonIconColor",
+                  "tabs": ["SP"]
+              }
+          ]
         }
     }
 }
