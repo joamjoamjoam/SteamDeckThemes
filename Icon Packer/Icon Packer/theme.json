@@ -1,26 +1,31 @@
 {
-    "name": "Icon Packer",
-    "version": "v1.0",
-    "author": "joamjoamjoam",
-    "target": "System-Wide",
-    "description": "Set Icons System Wide using Icon Packs.",
-    "manifest_version": 3,
-    "inject": {
-        "ICPShared.css": [
-          "SP", "QuickAccess", "MainMenu"
-        ]
-    },
-    "patches": {
-      "Lock Screen Type": {
-        "default": "Xbox",
-        "type": "dropdown",
-        "values":{
-            "Xbox": {
-              "Icon Sets/Xbox Icons/Icons.css": [
-                "SP", "QuickAccess", "MainMenu"
-              ]
-            }
-        }
-      }
-    }
+	"name": "Icon Packer",
+	"version": "v1.0",
+	"author": "joamjoamjoam",
+	"target": "System-Wide",
+	"description": "Set Icons System Wide using Icon Packs.",
+	"manifest_version": 3,
+	"inject": {
+		"ICPShared.css": [
+			"SP", "QuickAccess", "MainMenu"
+		]
+	},
+	"patches": {
+		"Lock Screen Type": {
+			"default": "Xbox",
+			"type": "dropdown",
+			"values":{
+				"Xbox": {
+					"Icon Sets/Xbox Icons/Icons.css": [
+						"SP", "QuickAccess", "MainMenu"
+					]
+				},
+				"SNES": {
+					"Icon Sets/SNES Icons/Icons.css": [
+						"SP", "QuickAccess", "MainMenu"
+					]
+				}
+			}
+		}
+	}
 }
