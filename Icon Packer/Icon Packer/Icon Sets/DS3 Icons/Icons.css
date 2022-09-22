@@ -1,0 +1,156 @@
+
+:root {
+	/* Button Icons. If you want to use the default then use the default steamglyph image path or just delete the variable*/
+
+	--ICPAButtonImage: url("/themes_custom/Icon Packer/Icon Sets/SNES Icons/icons/32px/shared_button_x.svg");
+	--ICPXButtonImage: url("/themes_custom/Icon Packer/Icon Sets/SNES Icons/icons/32px/shared_button_t.svg");
+	--ICPYButtonImage: url("/themes_custom/Icon Packer/Icon Sets/SNES Icons/icons/32px/shared_button_s.svg");
+	--ICPBButtonImage: url("/themes_custom/Icon Packer/Icon Sets/SNES Icons/icons/32px/shared_button_o.svg");
+	--ICPMenuButtonImage: url("/themes_custom/Icon Packer/Icon Sets/SNES Icons/icons/32px/sd_button_menu.svg");
+	--ICPViewButtonImage: url("/themes_custom/Icon Packer/Icon Sets/SNES Icons/icons/32px/sd_button_view.svg");
+	/*--ICPL2ButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/l2.png");*/
+	/*--ICPR2ButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/r2.png");*/
+	/*--ICPL1ButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/l1.png");*/
+	/*--ICPR1ButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/r1.png");*/
+	/*--ICPL3ButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/l3.png");*/
+	/*--ICPR3ButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/r3.png");*/
+
+	/* Left Stick*/
+	/*--ICPLeftStickNoDirectionButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/rstick.png");*/
+	/*--ICPLeftStickUpButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/lsup.png");*/
+	/*--ICPLeftStickLeftButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/lsleft.png");*/
+	/*--ICPLeftStickDownButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/lsdown.png");*/
+	/*--ICPLeftStickRightButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/lsright.png");*/
+
+	/* Right Stick*/
+	/*--ICPRightStickNoDirectionButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/lstick.png");*/
+	/*--ICPRightStickUpButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/rsup.png");*/
+	/*--ICPRightStickLeftButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/rsleft.png");*/
+	/*--ICPRightStickDownButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/rsdown.png");*/
+	/*--ICPRightStickRightButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/rsright.png");*/
+
+	/* D-Pad */
+	/*--ICPDpadNoDirectionButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/dpad.png");*/
+	/*--ICPDpadUpButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/dpup.png");*/
+	/*--ICPDpadLeftButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/dpleft.png");*/
+	/*--ICPDpadDownButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/dpdown.png");*/
+	/*--ICPDpadRightButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/dpright.png");*/
+
+	/*Back Paddles*/
+	/*--ICPL4ButtonImage: url("/steaminputglyphs/sd_l4.svg");*/
+	/*--ICPL5ButtonImage: url("/steaminputglyphs/sd_l5.svg");*/
+	/*--ICPR4ButtonImage: url("/steaminputglyphs/sd_r4.svg");*/
+	/*--ICPR5ButtonImage: url("/steaminputglyphs/sd_r5.svg");*/
+
+	/*--ICPR2SoftPullButtonImage : url("/steaminputglyphs/sd_r2_half.svg");*/
+	/*--ICPL2SoftPullButtonImage : url("/steaminputglyphs/sd_l2_half.svg");*/
+
+	/*--ICPL3TouchButtonImage : url("/steaminputglyphs/shared_lstick_touch.svg");*/
+	/*--ICPR3TouchButtonImage : url("/steaminputglyphs/shared_rstick_touch.svg");*/
+
+	/* Left TrackPad*/
+	/*--ICPLeftTrackpadUpButtonImage: url("/steaminputglyphs/sd_ltrackpad_up.svg");*/
+	/*--ICPLeftTrackpadLeftButtonImage: url("/steaminputglyphs/sd_ltrackpad_left.svg");*/
+	/*--ICPLeftTrackpadDownButtonImage: url("/steaminputglyphs/sd_ltrackpad_down.svg");*/
+	/*--ICPLeftTrackpadRightButtonImage: url("/steaminputglyphs/sd_ltrackpad_right.svg");*/
+	/*--ICPLeftTrackpadClickButtonImage: url("/steaminputglyphs/sd_ltrackpad_click.svg");*/
+	/*--ICPLeftTrackpadTouchButtonImage: url("/steaminputglyphs/sd_ltrackpad_ring.svg");*/
+	/*--ICPLeftTrackpadSwipeButtonImage : url("/steaminputglyphs/sd_ltrackpad_swipe.svg");*/
+
+	/* Right TrackPad*/
+	/*--ICPRightTrackpadUpButtonImage: url("/steaminputglyphs/sd_rtrackpad_up.svg");*/
+	/*--ICPRightTrackpadLeftButtonImage: url("/steaminputglyphs/sd_rtrackpad_left.svg");*/
+	/*--ICPRightTrackpadDownButtonImage: url("/steaminputglyphs/sd_rtrackpad_down.svg");*/
+	/*--ICPRightTrackpadRightButtonImage: url("/steaminputglyphs/sd_rtrackpad_right.svg");*/
+	/*--ICPRightTrackpadClickButtonImage: url("/steaminputglyphs/sd_rtrackpad_click.svg");*/
+	/*--ICPRightTrackpadTouchButtonImage: url("/steaminputglyphs/sd_rtrackpad_ring.svg");*/
+	/*--ICPRightTrackpadSwipeButtonImage: url("/steaminputglyphs/sd_rtrackpad_swipe.svg");*/
+
+	/* Gyro */
+	/*--ICPGyroButtonImage: url("/steaminputglyphs/shared_gyro.svg");*/
+
+
+	/* Inline SVG Elements. Select if you  want the Stock Icons or Custom Icons.*/
+
+
+	/* SVG Ekement Filters */
+	--ICPMainMenuSvgColorFilter: none;
+	--ICPQAMMenuSvgColorFilter: none;
+	--ICPHeaderSvgColorFilter: none;
+
+
+	/*                            Steam Button Icon                                                                */
+
+	/* If using a Custom Steam Button Icon use this block*/
+
+	/* Custom Steam Button Image 100px x 36px*/
+	/*--ICPQAMSteamButtonDisplay: none;*/
+	/*--ICPQAMCustomSteamButtonDisplay: flex;*/
+	/*--ICPSteamButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/steambutton100x36.png");*/
+
+	/************************************************************************************************************/
+
+	/* If using a Stock Steam Button Icon use this block*/
+	/* Stock Steam Button Icon */
+	--ICPQAMCSteamButtonDisplay: flex;
+	--ICPQAMCCustomSteamButtonDisplay: none;
+
+
+	/*                            Quick Access Menu                                                                */
+
+	/* If using Custom QAM Menu Icons use this block*/
+
+	/*--ICPQAMCollumnIconsDisplay: none;
+	--ICPQAMCustomCollumnIconsDisplay: flex;
+
+	--ICPQAMNotificationsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/notifications.png");
+	--ICPQAMFriendsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/friends.png");
+	--ICPQAMQuickSettingsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/settings.png");
+	--ICPQAMPerformanceButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/performance.png");
+	--ICPQAMHelpButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/help.png");
+	--ICPQAMDeckyButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/deckyMenu.png");*/
+	/************************************************************************************************************/
+
+	/* If using Stock QAM Menu Icons use this block*/
+	--ICPQAMCollumnIconsDisplay: flex;
+	--ICPQAMCustomCollumnIconsDisplay: none;
+
+
+	/*                            Main Menu                                                                */
+
+
+	/* If using Custom Main Menu Icons use this block*/
+
+	--ICPMainMenuItemIconsDisplay: none;
+	--ICPMainMenuCustomItemIconsDisplay: block;
+
+	/*--ICPMainMenuItemHomeButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/home.png");
+	--ICPMainMenuItemLibraryButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/library.png");
+	--ICPMainMenuItemStoreButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/store.png");
+	--ICPMainMenuItemFriendsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/friends.png");
+	--ICPMainMenuItemMediaButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/media.png");
+	--ICPMainMenuItemDownloadsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/downloads.png");
+	--ICPMainMenuItemSettingsButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/settings.png");
+	--ICPMainMenuItemPowerButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/power.png");*/
+
+	/* If using Stock Main Menu Icons use this block*/
+	--ICPMainMenuItemIconsDisplay: flex;
+	--ICPMainMenuCustomItemIconsDisplay: none;
+
+
+	/*                            Header Icons                                                                */
+
+
+	/* If using Custom Header Icons use this block*/
+	/*--ICPHeaderIconDisplay: none;*/
+	/*--ICPCustomHeaderIconDisplay: block;*/
+
+	/*--ICPHeaderSearchBarIconButtonImage: url("/themes_custom/Icon Packer/Icon Sets/Xbox Icons/icons/32px/systemIcons/search.png");*/
+
+	/* If using Stock Header Icons use this block*/
+	 --ICPHeaderIconDisplay: block;
+	--ICPCustomHeaderIconDisplay: none;
+
+
+	/* Cant Theme Wifi or battery Icon for now.*/
+}
