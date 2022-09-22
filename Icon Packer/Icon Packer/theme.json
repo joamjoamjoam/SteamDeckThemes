@@ -24,6 +24,11 @@
 					"Icon Sets/SNES Icons/Icons.css": [
 						"SP", "QuickAccess", "MainMenu"
 					]
+				},
+				"DS3": {
+					"Icon Sets/DS3 Icons/Icons.css": [
+						"SP", "QuickAccess", "MainMenu"
+					]
 				}
 			}
 		}
