@@ -2,9 +2,9 @@
 
 ### Themes the Steam UI to use coloured SNES A/B/X/Y/START/SELECT icons
 
-![Controller Config](/images/Icon%20Packer/Xbox/controllerConfigMenu.jpg)
-![Main Menu](/images/Icon%20Packer/Xbox/MainMenu.jpg)
-![Quick Access Menu](/images/Icon%20Packer/Xbox/QAM.jpg)
+![Controller Config](/images/Icon%20Packer/SNES/config-qam.png)
+
+![Controller Config](/images/Icon%20Packer/SNES/library.png)
 
 more info at [zeusofthecrows.github.io](https://zeusofthecrows.github.io/games/mods/nsx-button-prompts#steam-deck)
 
