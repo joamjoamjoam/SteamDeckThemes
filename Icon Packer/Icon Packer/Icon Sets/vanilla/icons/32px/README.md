@@ -1,0 +1,1 @@
+l2/r2_half are the shaded trigger icons used for soft pull
