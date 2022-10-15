@@ -19,7 +19,7 @@
     font-weight: 600;
 }
 
-.lockscreen_NumericButtonOption_2c4Hz > img {
+.lockscreen_NumericButtonOption_2c4Hz > img, .lockscreen_NumericButtonOption_2c4Hz > svg {
     display: none;
 }
 
