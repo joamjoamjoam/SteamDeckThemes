@@ -1,0 +1,9 @@
+.lockscreen_Container_3rFFU {
+    background: var(--MLSContainerImage);
+    background-size:cover;
+}
+
+/* statusbar background opacity */
+.header_Header_1E_SL::before {
+    opacity: .5
+}

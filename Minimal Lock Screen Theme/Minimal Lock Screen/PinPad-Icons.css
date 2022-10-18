@@ -1,0 +1,16 @@
+:root{
+    /* LockScreen Indicator Colors */
+    --MLSFontColor: #fff;
+}
+
+
+.lockscreen_Indicators_3fJq6 {
+    padding: 10px 36px 23px 36px;
+}
+
+.lockscreen_NumericButtonOption_2c4Hz {
+    padding: 0 22px;
+    line-height: 68px;
+    font-size: 0;
+    gap: 0px;
+}

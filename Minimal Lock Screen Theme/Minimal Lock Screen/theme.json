@@ -1,45 +1,103 @@
 {
     "name": "Minimal Lock Screen",
-    "version": "v1.0",
-    "author": "joamjoamjoam, blax722",
+    "version": "v2.0",
+    "author": "joamjoamjoam, blax722, My1",
     "target": "Lock Screen",
-    "description": "Gives the Lock Screen a minimalist stlye. Best used with Lock Screen Pictoral backgrounds",
-    "manifest_version": 3,
+    "description": "Gives the Lock Screen a minimalist style and can set a custom Lock Screen background.",
+    "manifest_version": 4,
     "inject": {
         "MLSShared.css": [
             "SP"
         ]
     },
     "patches": {
-        "Transparent Background": {
-            "default": "No",
-            "type": "checkbox",
+        "Background Type": {
+            "default": "Default",
+            "type": "dropdown",
             "values":{
-                "No": {},
-                "Yes": {
+                "Default": {},
+                "Transparent": {
                     "LockScreenContainerBackground/Transparent.css": [
                       "SP"
                     ]
-                  }
-            }
-        },
-        "Lock Screen Type": {
-            "default": "Minimal-Icons",
-            "type": "dropdown",
-            "values":{
-                "Minimal": {
-                    "minimalLockScreen.css": [
+                  },
+                "Color": {
+                    "LockScreenContainerBackground/Color.css": [
                       "SP"
                     ]
                   },
-                  "Minimal-Icons": {
-                    "minimalLockScreenWithIcons.css": [
+                "Image": {
+                    "LockScreenContainerBackground/Image.css": [
                       "SP"
                     ]
                   }
-            }
+            },"components": [
+                {
+                    "name": "Background Color Picker",
+                    "type": "color-picker",
+                    "on": "Color",
+                    "default": "#000",
+                    "css_variable": "MLSContainerColor",
+                    "tabs": ["SP"]
+                },
+                {
+                    "name": "Background Image Picker",
+                    "type": "image-picker",
+                    "on": "Image",
+                    "default": "Minimal Lock Screen/LockScreenContainerBackground/default.png",
+                    "css_variable": "MLSContainerImage",
+                    "tabs": ["SP"]
+                }
+            ]
         },
-        "Lock Screen Background Color": {
+        "Pin Pad Style": {
+            "default": "Standard",
+            "type": "dropdown",
+            "values":{
+                "Standard": {
+                    "PinPad-Hybrid.css": [
+                      "SP"
+                    ]
+                  },
+                  "Only Numbers": {
+                    "PinPad-Numbers.css": [
+                      "SP"
+                    ]
+                  },
+                  "Only Icons": {
+                    "PinPad-Icons.css": [
+                      "SP"
+                    ]
+                  },
+                  "No Pin Pad (WARNING: Controller Input ONLY)": {
+                    "PinPad-None.css": [
+                      "SP"
+                    ]
+                  }
+            },"components": [
+                {
+                    "name": "Lockscreen Font Color Picker",
+                    "type": "color-picker",
+                    "on": "Only Numbers",
+                    "default": "#fff",
+                    "css_variable": "MLSFontColor",
+                    "tabs": ["SP"]
+                }
+            ]
+        },
+        "Left-Handed Mode": {
+          "type": "checkbox",
+          "default": "No",
+          "values": {
+            "Yes": {
+              "Left-Handed.css": [
+                "SP"
+              ]
+            },
+            "No":{}
+          }
+        },
+        "Input Area Background Color": {
           "type": "none",
           "values": {
               "_": {
@@ -47,45 +105,11 @@
           },
           "components": [
               {
-                  "name": "Background Color Picker",
+                  "name": "Input Area Background Color Picker",
                   "type": "color-picker",
                   "on": "_",
                   "default": "#000",
                   "css_variable": "MLSBackgroundColor",
-                  "tabs": ["SP"]
-              }
-          ]
-        },   
-        "Lock Screen Font Color": {
-          "type": "none",
-          "values": {
-              "_": {
-              }
-          },
-          "components": [
-              {
-                  "name": "Lockscreen Font Color Picker",
-                  "type": "color-picker",
-                  "on": "_",
-                  "default": "#fff",
-                  "css_variable": "MLSFontColor",
-                  "tabs": ["SP"]
-              }
-          ]
-        },
-        "Lock Screen Icon Color": {
-          "type": "none",
-          "values": {
-              "_": {
-              }
-          },
-          "components": [
-              {
-                  "name": "Lockscreen Icon Color Picker",
-                  "type": "color-picker",
-                  "on": "_",
-                  "default": "#fff",
-                  "css_variable": "MLSButtonIconColor",
                   "tabs": ["SP"]
               }
           ]
