@@ -1,0 +1,13 @@
+:root{
+    /* LockScreen Indicator Colors */
+    --MLSFontColor: #fff;
+}
+
+.lockscreen_Indicators_3fJq6 {
+    padding: 17px 37.75px 16px 37.75px;
+    border-radius: var(--MLSBorderRadius);
+}
+
+.lockscreen_NumericButtonInput_2wl_h {
+  display:none;
+}
