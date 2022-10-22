@@ -3,7 +3,7 @@
     "version": "v1.0",
     "author": "joamjoamjoam",
     "target": "System-Wide",
-    "manifest_version": 2,
+    "manifest_version": 4,
     "inject": {
         "shared.css": [
             "SP"
@@ -12,48 +12,21 @@
             "QuickAccess", "MainMenu"
         ] 
     },
-    "patches": {
-        "Clean Game View": {
-            "default": "Yes",
-            "type": "checkbox",
-            "values":{
-                "No": {},
-                "Yes": {
-                    "cleanGameView/shared.css": [ "SP" ]
-                }
-            }
+    "dependencies": {
+        "Minimal Lock Screen": {
+            "Pin Pad Style": "Standard",
+            "Background Type" : "Transparent",
+            "Input Area Background Color" : "_",
+            "Input Area Background Color Picker" : "#2a62d1AF"
+        },
+        "Clean Gameview": {
+            "Show Steam Cloud" : "Yes"
         },
         "Switch Like Home": {
-            "default": "Yes Without Friends",
-            "type": "dropdown",
-            "values":{
-                "No": {},
-                "Yes With Friends": {
-                    "switchLikeHome.css": [ "SP" ]
-                },
-                "Yes Without Friends": {
-                    "nofriends.css": [ "SP" ]
-                }
-            }
-        },
-        "Lock Screen Theme": {
-            "default": "Minimal with Icons",
-            "type": "dropdown",
-            "values":{
-                "None": {
-                },
-                "Minimal": {
-                    "lockscreen/MLSShared.css": [ "SP" ],
-                    "lockscreen/sharedBackground.css": [ "SP" ],
-                    "lockscreen/minimalLockScreen.css": [ "SP" ]
-                },
-                "Minimal with Icons": {
-                    "lockscreen/MLSShared.css": [ "SP" ],
-                    "lockscreen/sharedBackground.css": [ "SP" ],
-                    "lockscreen/minimalLockScreenWithIcons.css": [ "SP" ]
-                }
-            }
-        },
+            "No Friends" : "Yes"
+        }
+    },
+    "patches": {
         "Keyboard Theme": {
             "default": "None",
             "type": "dropdown",
