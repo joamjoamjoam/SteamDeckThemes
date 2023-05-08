@@ -37,7 +37,7 @@
 }
 
 .lockscreen_NumericButtonInput_2wl_h {
-    background-color: var(--MLSBackgroundColor);
+    background-color: var(--MLSBackgroundColor) !important;
     position: absolute;
     bottom: 45px;
     padding: 10px 18px 18px 18px;
@@ -51,7 +51,7 @@
 }
 
 .lockscreen_Indicators_3fJq6 {
-    background-color: var(--MLSBackgroundColor);
+    background-color: var(--MLSBackgroundColor) !important;
     position: absolute;
     bottom: 0;
     right: 0;
